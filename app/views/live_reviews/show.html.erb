@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @live_review.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @live_review.subtitle %>
+</p>
+
+<p>
+  <strong>Image one:</strong>
+  <%= @live_review.image_one %>
+</p>
+
+<p>
+  <strong>Image two:</strong>
+  <%= @live_review.image_two %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @live_review.content %>
+</p>
+
+<%= link_to 'Edit', edit_live_review_path(@live_review) %> |
+<%= link_to 'Back', live_reviews_path %>

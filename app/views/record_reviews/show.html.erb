@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @record_review.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @record_review.subtitle %>
+</p>
+
+<p>
+  <strong>Image one:</strong>
+  <%= @record_review.image_one %>
+</p>
+
+<p>
+  <strong>Image two:</strong>
+  <%= @record_review.image_two %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @record_review.content %>
+</p>
+
+<%= link_to 'Edit', edit_record_review_path(@record_review) %> |
+<%= link_to 'Back', record_reviews_path %>

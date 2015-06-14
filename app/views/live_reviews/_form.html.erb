@@ -1,0 +1,37 @@
+<%= form_for(@live_review) do |f| %>
+  <% if @live_review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@live_review.errors.count, "error") %> prohibited this live_review from being saved:</h2>
+
+      <ul>
+      <% @live_review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subtitle %><br>
+    <%= f.text_field :subtitle %>
+  </div>
+  <div class="field">
+    <%= f.label :image_one %><br>
+    <%= f.text_field :image_one %>
+  </div>
+  <div class="field">
+    <%= f.label :image_two %><br>
+    <%= f.text_field :image_two %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
