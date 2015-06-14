@@ -17,6 +17,13 @@ GIT
       safe_yaml (~> 1.0)
       sass-rails (>= 4.0, < 6)
 
+GIT
+  remote: git://github.com/sibext/rails_admin_enum4.git
+  revision: cb504520fbdb29718099cc1b355f849204283075
+  specs:
+    rails_admin_enum4 (0.1.3)
+      rails (>= 4.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -200,6 +207,7 @@ DEPENDENCIES
   pry-rails
   rails (= 4.2.0)
   rails_admin!
+  rails_admin_enum4!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
