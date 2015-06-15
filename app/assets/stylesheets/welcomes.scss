@@ -2,20 +2,25 @@
   width: 95%;
   margin: 0 auto;
   text-align: center;
+  margin-left: -0.6%;
 }
 
 .article-show {
   width: 22%;
   margin: 1%;
   height: 8em;
-  display: inline-block;
+  float: left;
   font-size: 50px;
   position: relative;
 }
 
+.image {
+  width: 100%;
+}
+
 .article-show img {
   vertical-align: top;
-  max-width: 100%;
+  width: 100%;
   padding: 40px;
   position: relative;
   overflow: hidden ;
@@ -31,6 +36,7 @@
 .text {
   margin: auto;
   font-size: 0;
+  line-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
