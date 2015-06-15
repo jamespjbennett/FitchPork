@@ -12,12 +12,18 @@
   font-size: 40px;
   position: relative;
 }
+
 .article-show img {
   vertical-align: top;
   max-width: 100%;
   padding: 40px;
   position: relative;
   overflow: hidden ;
+  -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
 
 }
 
@@ -28,23 +34,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  top: -100%
+  top: -100%;
+  
 }
 
 .article-show:hover .text {
   font-size: 50px;
   top: 40%;
   left: 30%;
-  transition: opacity .45s ease-in-out;
-     -moz-transition: opacity .45s ease-in-out;
-     -webkit-transition: opacity .45s ease-in-out;
+
 }
 
 .article-show:hover img {
   opacity: 0.4;
-  transition: opacity .45s ease-in-out;
-     -moz-transition: opacity .45s ease-in-out;
-     -webkit-transition: opacity .45s ease-in-out;
 }
 
 
