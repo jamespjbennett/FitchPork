@@ -1,8 +1,12 @@
 <div class="home-container">
   <% @articles.each do |article| %>
     <div class="article-show">
+      <div class="image">
         <%= image_tag(article.image_one) %>
+      </div>
+      <div class="text">
+        <%= article.artist %>
+      </div>
     </div>
   <% end %>
-
 </div>

@@ -10,11 +10,40 @@
   height: 8em;
   display: inline-block;
   font-size: 40px;
-  line-height: 5em;
+  position: relative;
 }
 .article-show img {
+  vertical-align: top;
   max-width: 100%;
+  padding: 40px;
+  position: relative;
+  overflow: hidden ;
+
 }
+
+
+.text {
+  margin: auto;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100%
+}
+
+.article-show:hover .text {
+  font-size: 50px;
+  top: 40%;
+  left: 30%;
+}
+
+.article-show:hover img {
+  opacity: 0.6;
+}
+
+
+
+
 
 
 
