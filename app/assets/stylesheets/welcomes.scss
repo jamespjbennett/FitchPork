@@ -2,16 +2,14 @@
   width: 95%;
   margin: 0 auto;
   text-align: center;
-  margin-left: -0.6%;
+  margin-left: 5.4%;
 }
 
 .article-show {
-  width: 22%;
-  margin: 1%;
-  height: 8em;
+  // background-color: gray;
+  width: 20%;
   float: left;
-  font-size: 50px;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -21,7 +19,7 @@
 .article-show img {
   vertical-align: top;
   width: 100%;
-  padding: 40px;
+  // padding: 40px;
   position: relative;
   overflow: hidden ;
   -webkit-transition: all 0.4s ease-in-out;
@@ -45,14 +43,14 @@
 }
 
 .article-show:hover .text {
-  font-size: 50px;
+  font-size: 40px;
   top: 40%;
   left: 30%;
 
 }
 
 .article-show:hover img {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 

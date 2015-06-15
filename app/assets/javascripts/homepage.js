@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
   $('.home-container').masonry({
-    // options
     itemSelector: '.article-show',
-    columnWidth: 100
+    columnWidth: 100,
+    gutter: 10
   });
+
+
   
 }) // document ready ended
 
