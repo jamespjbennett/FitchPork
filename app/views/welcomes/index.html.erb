@@ -5,7 +5,7 @@
         <%= image_tag(article.image_one) %>
       </div>
       <div class="text">
-        <%= article.artist %>
+        <%= link_to article.artist, article_path(article) %>
       </div>
     </div>
   <% end %>
