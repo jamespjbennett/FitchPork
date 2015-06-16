@@ -1,3 +1,3 @@
 class Article < ActiveRecord::Base
-  enum category: [ :live, :recorded, :news, :interview ]
+  enum category: [ :Live, :Recorded, :News, :Interview, :Feature]
 end
