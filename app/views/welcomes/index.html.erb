@@ -1,12 +1,16 @@
 <div class="home-container">
-  <% @articles.each do |article| %>
-    <div class="article-show">
-      <div class="image">
-        <%= image_tag(article.image_one) %>
+  <div class="latest_article"> 
+  </div>
+  <div class="article-show-all">
+    <% @articles.each do |article| %>
+      <div class="article-show">
+        <div class="image">
+          <%= image_tag(article.image_one) %>
+          <div class="article-info hidden">
+            <%= link_to(article.category, article_path(article)) %>
+          </div>
+        </div>
       </div>
-      <div class="text">
-        <%= link_to article.artist, article_path(article) %>
-      </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
