@@ -12,20 +12,22 @@
 .latest_article {
   position: absolute;
   height: 24em;
-  width: 95%;
+  width: 92%;
 }
 .article-show {
-  width: 30%;
+  width: 28%;
   display: inline-block;
   margin-bottom: 10px;
 }
 
 .image {
+  position: relative;
+  height: 100%;
   width: 100%;
 }
 
 .article-show img {
-  width: 100%;
+  width: 78%;
   position: relative;
   // overflow: hidden ;
   -webkit-transition: all 0.4s ease-in-out;
@@ -74,7 +76,27 @@
 }
 
 .article-info {
-  width: 100%;
+  position: absolute;
+  left: 14%;
+  top: 15%;
+  font-size: 47px;
+}
+
+.article-info a {
+  color: white;
+}
+
+.latest-article-image img {
+  height: 100%;
+}
+
+.latest-article-image {
+  height: 100%;
+  width: 49%;
+  display: inline-block;
+}
+
+.latest-article-images {
   height: 100%;
 }
 

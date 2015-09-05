@@ -10,6 +10,8 @@ class WelcomesController < ApplicationController
     @news = News.all
     @interviews = Interview.all
     @articles = Article.all
+    @latest_article = Article.last
+    @second_latest_article = Article.all[-2]
   end
 
   # GET /welcomes/1

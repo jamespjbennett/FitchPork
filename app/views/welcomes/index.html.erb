@@ -1,13 +1,21 @@
 <div class="home-container">
   <div class="latest_article"> 
+    <div class="latest-article-images">
+      <div class="latest-article-image">
+        <%= image_tag(@latest_article.image_one, :class => "header-image #{@latest_article.id}") %>
+      </div>
+      <div class="latest-article-image">
+        <%= image_tag(@second_latest_article.image_one, :class => "header-image #{@second_latest_article.id}") %>
+      </div>
+    </div>
   </div>
   <div class="article-show-all">
     <% @articles.each do |article| %>
-      <div class="article-show">
+      <div class="article-show <%= article.id %>">
         <div class="image">
           <%= image_tag(article.image_one) %>
-          <div class="article-info hidden">
-            <%= link_to(article.category, article_path(article)) %>
+          <div class="article-info">
+            <%= link_to(article.artist, article_path(article)) %>
           </div>
         </div>
       </div>
