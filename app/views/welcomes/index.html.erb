@@ -2,8 +2,26 @@
   <div class="latest_article"> 
     <div class="latest-article-images">
       <div class="latest-article-image" id="<%= @latest_article.image_one %>">
+        <div class="header-article-info">
+          <p class="header-artist-link-text"> <%= link_to(@latest_article.artist.upcase, article_path(@latest_article)) %></p> 
+          <div class="article-summary">
+            <p> this is the latest article brief summary</p>
+          </div>
+          <div class="article-category">
+            <p><%= @latest_article.category %></p>
+          </div>
+        </div>
       </div>
       <div class="latest-article-image" id="<%= @second_latest_article.image_one %>">
+        <div class="header-article-info">
+          <p class="header-artist-link-text"> <%= link_to(@second_latest_article.artist.upcase, article_path(@second_latest_article)) %></p>  
+          <div class="article-summary">
+            <p> this is the second latest article summary</p>
+          </div>
+          <div class="article-category">
+            <p> <%= @second_latest_article.category %></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -11,7 +29,6 @@
     <% @articles.each do |article| %>
       <div class="article-show <%= article.id %>">
         <div class="image" id="<%= article.image_one %>">
-          <!-- <%= image_tag(article.image_one) %> -->
           <div class="article-info">
             <% article.artist.split(" ").each do |word| %>
               <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 

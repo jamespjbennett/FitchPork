@@ -21,6 +21,10 @@
   margin-bottom: 10px;
 }
 
+.header-article-info {
+  width: 100%;
+}
+
 .image {
   position: relative;
   height: 20em;
@@ -51,12 +55,7 @@
   top: -100%;
 }
 
-.article-category {
-  position: absolute;
-  top: 0;
-  left: 0;
-  top: -100%;
-}
+
 
 // .article-show:hover p {
 //   font-size: 40px;
@@ -121,6 +120,49 @@
 
 .artist-link-text {
   z-index: 1000;
+}
+
+.header-artist-link-text {
+  display: block;
+  float: left;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 67px;
+  margin-top: 10%;
+  margin-left: 3%;
+  text-decoration: overline underline;
+}
+
+.header-artist-link-text a {
+  color: white;
+}
+
+.article-category {
+  position: relative;
+}
+
+.article-summary {
+  position: relative;
+}
+
+.article-category p {
+  position: absolute;
+  color: white;
+  top: 13em;
+  left: 1em;
+  font-size: 23px;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 8px;
+}
+
+.article-summary p {
+  position: absolute;
+  color: white;
+  top: 7em;
+  line-height: 120%;
+  text-align: left;
+  left: 1em;
+  font-size: 23px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 
