@@ -8,19 +8,27 @@ $(document).ready(function(){
   //   gutter: 10
   // });
 
-  var imageIdArray = []
+  // var imageIdArray = []
+  // $('.latest-article-image').each(function(){
+  //   imageIdArray.push(Number($(this).children().attr('class').split(" ")[1]))
+  // })
+
+  // var highestImage =  imageIdArray.sort()[1]
+
+  // var imageWidth = $('.header-image.' + highestImage).width()
+  // var imageHeight = $('.header-image.' + highestImage).height()
+
+  // if(imageWidth >= imageHeight*2){
+  //   $('.header-image.' + imageIdArray.sort()[0] ).parent().addClass('hidden')
+  // }
   $('.latest-article-image').each(function(){
-    imageIdArray.push(Number($(this).children().attr('class').split(" ")[1]))
-  })
-
-  var highestImage =  imageIdArray.sort()[1]
-
-  var imageWidth = $('.header-image.' + highestImage).width()
-  var imageHeight = $('.header-image.' + highestImage).height()
-
-  if(imageWidth >= imageHeight*2){
-    $('.header-image.' + imageIdArray.sort()[0] ).parent().addClass('hidden')
-  }
+    var image_url = $(this).attr('id');
+    // $(this).css('background-url', image_url)
+    $(this).css({"background-image": "url("+image_url+")", 
+                 "background-repeat": "no-repeat",
+                 "background-size": "cover",
+                 "background-position": "50% 50%" });
+  });
 
   $('.image').each(function(){
     var image_url = $(this).attr('id');

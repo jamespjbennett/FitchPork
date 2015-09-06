@@ -6,13 +6,13 @@
 
 .article-show-all {
   position: relative;
-  top: 27em;
+  top: 30em;
   margin-left: -4em;
 }
 
 .latest_article {
   position: absolute;
-  height: 24em;
+  height: 26em;
   width: 92%;
 }
 .article-show {
@@ -103,14 +103,15 @@
 
 .latest-article-image {
   height: 100%;
-  width: 49%;
+  width: 42%;
   display: inline-block;
+  margin-right: 2%;
 }
 
 .latest-article-images {
   height: 100%;
-  width: 105%;
-  margin-left: -2.5%;
+  width: 106%;
+  margin-left: -2%;
 }
 
 .test {

@@ -1,11 +1,9 @@
 <div class="home-container">
   <div class="latest_article"> 
     <div class="latest-article-images">
-      <div class="latest-article-image">
-        <%= image_tag(@latest_article.image_one, :class => "header-image #{@latest_article.id}") %>
+      <div class="latest-article-image" id="<%= @latest_article.image_one %>">
       </div>
-      <div class="latest-article-image">
-        <%= image_tag(@second_latest_article.image_one, :class => "header-image #{@second_latest_article.id}") %>
+      <div class="latest-article-image" id="<%= @second_latest_article.image_one %>">
       </div>
     </div>
   </div>
