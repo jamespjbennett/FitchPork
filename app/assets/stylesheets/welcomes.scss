@@ -7,6 +7,7 @@
 .article-show-all {
   position: relative;
   top: 27em;
+  margin-left: -4em;
 }
 
 .latest_article {
@@ -22,9 +23,11 @@
 
 .image {
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 20em;
+  margin-right: 1em;
 }
+
+
 
 .article-show img {
   width: 78%;
@@ -55,12 +58,12 @@
   top: -100%;
 }
 
-.article-show:hover .text {
-  font-size: 40px;
-  color: '#404040';
-  top: 40%;
-  left: 15%;
-}
+// .article-show:hover p {
+//   font-size: 40px;
+//   color: '#404040';
+//   top: 40%;
+//   left: 15%;
+// }
 
 // .article-show:hover .text .article-category{
 //   font-size: 15px;
@@ -71,15 +74,23 @@
 // }
 
 
-.article-show:hover img {
-  opacity: 0.2;
-}
+// .article-show:hover img {
+//   opacity: 0.2;
+// }
 
 .article-info {
   position: absolute;
   left: 14%;
   top: 15%;
+  
+}
+
+.article-info p {
   font-size: 47px;
+  // text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.55);
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 0.6em;
+  text-align: left;
 }
 
 .article-info a {
@@ -98,7 +109,21 @@
 
 .latest-article-images {
   height: 100%;
+  width: 105%;
+  margin-left: -2.5%;
 }
+
+.test {
+  border: 1px solid black;
+  position: relative;
+}
+
+.artist-link-text {
+  z-index: 1000;
+}
+
+
+
 
 
 

@@ -1,10 +1,12 @@
+
+
 $(document).ready(function(){
 
-  $('.home-container').masonry({
-    itemSelector: '.article-show',
-    columnWidth: 100,
-    gutter: 10
-  });
+  // $('.home-container').masonry({
+  //   itemSelector: '.article-show',
+  //   columnWidth: 100,
+  //   gutter: 10
+  // });
 
   var imageIdArray = []
   $('.latest-article-image').each(function(){
@@ -19,6 +21,32 @@ $(document).ready(function(){
   if(imageWidth >= imageHeight*2){
     $('.header-image.' + imageIdArray.sort()[0] ).parent().addClass('hidden')
   }
+
+  $('.image').each(function(){
+    var image_url = $(this).attr('id');
+    // $(this).css('background-url', image_url)
+    $(this).css({"background-image": "url("+image_url+")", 
+                 "background-repeat": "no-repeat",
+                 "background-size": "cover",
+                 "background-position": "50% 50%" });
+  });
+
+  $('.image').mouseover(function(){
+    console.log('hovered')
+    $(this).css('background-image', "");
+    $(this).css('background-color', 'red');
+    $(this).children().children().children().css('color', 'black')
+  });
+
+  $('.image').mouseout(function(){
+    var image_url = $(this).attr('id');
+    $(this).css({"background-image": "url("+image_url+")", 
+                 "background-repeat": "no-repeat" });
+    $(this).css('background-color', '');
+    $(this).children().children().children().css('color', 'white')
+
+
+  })
 
 }) // document ready ended
 

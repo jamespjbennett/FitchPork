@@ -12,10 +12,12 @@
   <div class="article-show-all">
     <% @articles.each do |article| %>
       <div class="article-show <%= article.id %>">
-        <div class="image">
-          <%= image_tag(article.image_one) %>
+        <div class="image" id="<%= article.image_one %>">
+          <!-- <%= image_tag(article.image_one) %> -->
           <div class="article-info">
-            <%= link_to(article.artist, article_path(article)) %>
+            <% article.artist.split(" ").each do |word| %>
+              <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 
+            <% end %>  
           </div>
         </div>
       </div>
