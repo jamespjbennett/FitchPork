@@ -1,12 +1,21 @@
-<div class="article-intro-large-header" style="background: url(<%= @article.image_one %>); background-size: 100%;">
-  <div class="article-header-artist">
-    <p><%= @article.artist %></p>
+<div class="article-show-container">
+  <div class="article-intro-large-header" style="background: url(<%= @article.image_one %>); background-size: 100%; linear-gradient(red, orange);">
+    <div class="article-header-title">
+      <p><%= @article.title %></p>
+    </div>
+    <div class="further-article-info">
+      <div class="article-header-subtitle">
+        <p><%= @article.subtitle %></p>
+      </div>
+      <div class="article-header-artist">
+        <p><%= @article.artist %></p>
+      </div>
+    </div>
+    <div class="article-header-image"> 
+    </div>
   </div>
-  <div class="article-header-image">
-    
+  <div class="article-content"> 
+    <p><%= @article.content%></p>
   </div>
-</div>
-<div class="article-content"> 
-  <p><%= @article.content%></p>
 </div>
 
