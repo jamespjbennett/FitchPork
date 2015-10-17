@@ -11,12 +11,16 @@
 .article-content{
   height: 500px;
 }
+.article-header-static{
+  position:relative;
+}
 .article-header-image img{
   width: 100%;
 }
 .article-header-title p, .article-header-subtitle p, .article-header-artist p{
   color: white;
   font-family: 'Fjalla One', sans-serif;
+  /*text-shadow: 1px 1px 1px #4F4D4D;*/
 }
 
 .article-header-title{
@@ -24,9 +28,9 @@
 }
 
 .article-header-title p{
-  font-size: 45px;
-  letter-spacing: 0px;
-  line-height: 51px;
+  font-size: 99px;
+  letter-spacing: 2px;
+  line-height: 106px;
   width: 76%;
   margin: 0 auto;
 }
@@ -58,5 +62,19 @@
   padding-right: 30px
 }
 .article-intro-large-header{
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.article-header-with-content{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:1px;
+}
+.article-intro-large-header-coloring{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:1px;
+  background: blue;
+  opacity: 0.2;
 }
