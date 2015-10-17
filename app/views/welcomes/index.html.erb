@@ -30,9 +30,17 @@
       <div class="article-show <%= article.id %>">
         <div class="image" id="<%= article.image_one %>">
           <div class="article-info">
-            <% article.artist.split(" ").each do |word| %>
-              <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 
-            <% end %>  
+            <div class="article-artist-name">
+              <% article.artist.split(" ").each do |word| %>
+                <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 
+              <% end %> 
+            </div>
+            <div class="indiv-article-summary hidden ">
+              <p> this is the latest article brief summary</p>
+            </div> 
+            <div class="indiv-article-category hidden">
+              <p> <%= article.category %></p>
+            </div>
           </div>
         </div>
       </div>

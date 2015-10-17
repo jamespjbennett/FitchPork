@@ -1,0 +1,19 @@
+.article-intro-large-header{
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.article-header-image{
+  width: 100%;
+  margin-top: -2%;
+}
+.article-content{
+  height: 500px;
+}
+.article-header-image img{
+  width: 100%;
+}
+.article-header-artist{
+  color:white;
+}

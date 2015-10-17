@@ -43,7 +43,9 @@ $(document).ready(function(){
     console.log('hovered')
     $(this).css('background-image', "");
     $(this).css('background-color', 'red');
-    $(this).children().children().children().css('color', 'black')
+    // $(this).children().children().children().css('color', 'black');
+    $(this).children().find('.indiv-article-summary').removeClass('hidden');
+    $(this).children().find('.indiv-article-category').removeClass('hidden');
   });
 
   $('.image').mouseout(function(){
@@ -52,6 +54,10 @@ $(document).ready(function(){
                  "background-repeat": "no-repeat" });
     $(this).css('background-color', '');
     $(this).children().children().children().css('color', 'white')
+    $(this).children().find('.indiv-article-summary').addClass('hidden');
+    $(this).children().find('.indiv-article-category').addClass('hidden');
+
+
 
 
   })

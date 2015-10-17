@@ -1,3 +1,12 @@
-<p><%= @article.title %></p>
+<div class="article-intro-large-header" style="background: url(<%= @article.image_one %>); background-size: 100%;">
+  <div class="article-header-artist">
+    <p><%= @article.artist %></p>
+  </div>
+  <div class="article-header-image">
+    
+  </div>
+</div>
+<div class="article-content"> 
+  <p><%= @article.content%></p>
+</div>
 
-<p><%= @article.content%></p>
