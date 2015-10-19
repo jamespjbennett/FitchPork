@@ -18,10 +18,16 @@
       </div>
       <div class="article-header-image"> 
       </div>
+      <button class="scroll-to-content"></button>
     </div>
   </div>
-  <div class="article-content"> 
-    <p><%= @article.content%></p>
+  <div id="article-content"> 
+    <div class="col-md-6 col-lg-6 article-text-first">
+      <p><%= @article.content%></p>
+    </div>
+    <div class="col-md-6 col-lg-6 article-image-first">
+      <p><%= @article.content%></p>
+    </div>
   </div>
 </div>
 

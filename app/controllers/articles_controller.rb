@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   def index
+    binding.pry
     @articles_all = Article.all
     @articles_all.pop
     @latest_article = Article.last

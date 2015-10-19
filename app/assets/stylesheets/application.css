@@ -45,13 +45,13 @@ a:hover {
   top: 0;
   position: fixed;
   text-align: center;
-  font-size: 7em;
+  font-size: 5em;
   height: 1.3em;
   background: white;
   z-index: 3;
   font-weight: bold;
   padding-top: 1%;
-  border-bottom: 1px solid black;
+  font-family: 'Fjalla One', sans-serif!important;
  }
 
  .hidden {
@@ -59,9 +59,35 @@ a:hover {
  }
 
  .container {
-  margin-top: 3%;
+  margin-top: -18px;
  }
 
  .wrapper {
   margin-top: 14em;
+ }
+
+ ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+     color:    #DBDBDB;
+     text-align: center;
+     font-size: 17px;
+ }
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #DBDBDB;
+    opacity:  1;
+    text-align: center;
+    font-size: 17px;
+    
+ }
+ ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #DBDBDB;
+    opacity:  1;
+    text-align: center;
+    font-size: 17px;
+    
+ }
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #DBDBDB;
+    text-align: center;
+    font-size: 17px;
+    
  }

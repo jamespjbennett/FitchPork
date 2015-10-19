@@ -12,6 +12,7 @@ class WelcomesController < ApplicationController
     @articles = Article.all
     @latest_article = Article.last
     @second_latest_article = Article.all[-2]
+    request.env['PATH_INFO']
   end
 
   # GET /welcomes/1

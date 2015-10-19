@@ -6,16 +6,21 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
 </head>
 <body>
   <div class="header">
     <div class="container">
       FITCHPORK
     </div>
-    <input type="text" class="search-box">
+    <% if request.env['PATH_INFO'] == '/' %>
+      <input type="text" class="search-box" placeholder="Search for band">
+    <% end %>
   </div>
   <div class="wrapper">
     <%= yield %>
   </div>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.js"></script>
 </body>
 </html>

@@ -24,39 +24,38 @@
 }
 
 .article-header-title{
-  margin-top: 14%;
+  margin-top: 2%;
 }
 
 .article-header-title p{
-  font-size: 99px;
+  font-size: 86px;
   letter-spacing: 2px;
   line-height: 106px;
-  width: 76%;
+  width: 92%;
   margin: 0 auto;
 }
 
 .further-article-info{
-  width: 76%;
-  margin:0 auto;
+  width: 91%;
+  margin: 0 auto;
   margin-top: 5%;
 }
 .article-header-subtitle{
   width: 60%;
   display: inline-block;
-  border-right: 1px dotted #3E3E3E;
 }
 .article-header-subtitle p, .article-header-artist p{
-  font-size: 20px;
-  line-height: 26px; 
+  font-size: 23px;
+  line-height: 26px;
 }
 .article-header-artist{
   width: 39%;
-  display: inline-block;
+  display: block;
+  margin-top: 8%;
 }
 .article-header-artist p{
-  letter-spacing: 10px;
-  font-size: 34px;
-  padding-left: 30px;
+  letter-spacing: 16px;
+  font-size: 25px;
 }
 .article-header-subtitle p{
   padding-right: 30px
@@ -77,4 +76,7 @@
   top:1px;
   background: blue;
   opacity: 0.2;
+}
+.scroll-to-content{
+  margin-left: 50%;
 }

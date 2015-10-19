@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+  $('.scroll-to-content').on('click', function(){
+    $('body').scrollTo('#article-content');
+  })
+
   $('.search-box').on('keyup', function(){
     var searchterm = $(this).val();
     $('.article-show').each(function(){
@@ -49,10 +53,6 @@ $(document).ready(function(){
     $(this).children().children().children().css('color', 'white')
     $(this).children().find('.indiv-article-summary').addClass('hidden');
     $(this).children().find('.indiv-article-category').addClass('hidden');
-
-
-
-
   })
 
 }) // document ready ended
