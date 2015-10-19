@@ -27,7 +27,7 @@
   </div>
   <div class="article-show-all">
     <% @articles.each do |article| %>
-      <div class="article-show <%= article.id %>">
+      <div class="article-show <%= article.id %> <%=article.artist %>">
         <div class="image" id="<%= article.image_one %>">
           <div class="article-info">
             <div class="article-artist-name">
@@ -38,9 +38,6 @@
             <div class="indiv-article-summary hidden ">
               <p> this is the latest article brief summary</p>
             </div> 
-            <div class="indiv-article-category hidden">
-              <p> <%= article.category %></p>
-            </div>
           </div>
         </div>
       </div>

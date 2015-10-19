@@ -2,25 +2,18 @@
 
 $(document).ready(function(){
 
-  // $('.home-container').masonry({
-  //   itemSelector: '.article-show',
-  //   columnWidth: 100,
-  //   gutter: 10
-  // });
+  $('.search-box').on('keyup', function(){
+    var searchterm = $(this).val();
+    $('.article-show').each(function(){
+       var artistName = $(this).attr('class').split(" ")[2].toLowerCase();
+       if(artistName.substring(0, searchterm.length).toLowerCase() !== searchterm){
+         $(this).hide();
+       } else{
+         $(this).show();
+       }
+    })
+  });
 
-  // var imageIdArray = []
-  // $('.latest-article-image').each(function(){
-  //   imageIdArray.push(Number($(this).children().attr('class').split(" ")[1]))
-  // })
-
-  // var highestImage =  imageIdArray.sort()[1]
-
-  // var imageWidth = $('.header-image.' + highestImage).width()
-  // var imageHeight = $('.header-image.' + highestImage).height()
-
-  // if(imageWidth >= imageHeight*2){
-  //   $('.header-image.' + imageIdArray.sort()[0] ).parent().addClass('hidden')
-  // }
   $('.latest-article-image').each(function(){
     var image_url = $(this).attr('id');
     // $(this).css('background-url', image_url)
