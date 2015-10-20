@@ -28,11 +28,12 @@
 }
 
 .article-header-title p{
-  font-size: 86px;
+  font-size: 47px;
   letter-spacing: 2px;
   line-height: 106px;
   width: 92%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .further-article-info{
@@ -41,7 +42,7 @@
   margin-top: 5%;
 }
 .article-header-subtitle{
-  width: 60%;
+  width: 100%;
   display: inline-block;
 }
 .article-header-subtitle p, .article-header-artist p{
@@ -58,7 +59,8 @@
   font-size: 25px;
 }
 .article-header-subtitle p{
-  padding-right: 30px
+  padding-right: 30px;
+  text-align: center;
 }
 .article-intro-large-header{
   opacity: 0.3;
@@ -78,5 +80,15 @@
   opacity: 0.2;
 }
 .scroll-to-content{
+  margin-top: 10%;
   margin-left: 50%;
+  width: 100px;
+}
+.scroll-to-content:hover{
+  cursor:pointer;
+}
+.scroll-to-content p{
+  color:white;
+  font-family: 'Fjalla One', sans-serif;
+
 }
