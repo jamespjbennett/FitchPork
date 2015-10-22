@@ -30,7 +30,7 @@
 .article-header-title p{
   font-size: 47px;
   letter-spacing: 2px;
-  line-height: 106px;
+  line-height: 52px;
   width: 92%;
   margin: 0 auto;
   text-align: center;
@@ -91,4 +91,12 @@
   color:white;
   font-family: 'Fjalla One', sans-serif;
 
+}
+
+.article-text-first p{
+  font-size: 20px;
+  line-height:20px;
+}
+#article-content{
+  margin-top: 73px;
 }

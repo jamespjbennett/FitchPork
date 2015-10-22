@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   $('.scroll-to-content').on('click', function(){
-    $('body').scrollTo('#article-content');
+    $('body').scrollTo('#article-content', {duration:'fast'});
   })
 
   $('.search-box').on('keyup', function(){
