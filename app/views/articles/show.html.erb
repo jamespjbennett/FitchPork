@@ -24,11 +24,13 @@
     </div>
   </div>
   <div id="article-content"> 
-    <div class="col-md-6 col-lg-6 article-text-first">
+    <div class="col-md-3  article-text-first">
       <p><%= @article.content%></p>
     </div>
-    <div class="col-md-6 col-lg-6 article-image-first">
-      <p><%= @article.image_one%></p>
+    <div class="col-md-9 article-image-first">
+      <div class="article-image-first-container col-md-12">
+        <%=image_tag(@article.image_one)%>
+      </div>
     </div>
   </div>
 </div>

@@ -100,3 +100,6 @@
 #article-content{
   margin-top: 73px;
 }
+.article-image-first-container img{
+  width: 100%;
+}
