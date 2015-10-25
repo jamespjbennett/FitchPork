@@ -93,12 +93,13 @@
 }
 
 .article-text-first p{
-  font-size: 20px;
-  line-height:20px;
+  font-size: 25px;
+  line-height: 32px;
 }
 #article-content{
   margin-top: 73px;
 }
-.article-image-first-container img{
+.article-image-first-container img, .article-image-second-container img{
   width: 100%;
 }
+/*..article-image-first-container')*/
