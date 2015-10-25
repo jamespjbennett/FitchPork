@@ -46,8 +46,8 @@
   display: inline-block;
 }
 .article-header-subtitle p, .article-header-artist p{
-  font-size: 23px;
-  line-height: 26px;
+  font-size: 25px;
+  line-height: 37px;
 }
 .article-header-artist{
   width: 39%;
@@ -60,7 +60,6 @@
 }
 .article-header-subtitle p{
   padding-right: 30px;
-  text-align: center;
 }
 .article-intro-large-header{
   opacity: 0.3;
@@ -80,7 +79,7 @@
   opacity: 0.2;
 }
 .scroll-to-content{
-  margin-top: 10%;
+  margin-top: 19%;
   margin-left: 50%;
   width: 100px;
 }
