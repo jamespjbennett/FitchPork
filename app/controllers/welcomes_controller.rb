@@ -12,6 +12,19 @@ class WelcomesController < ApplicationController
     @articles = Article.all
     @latest_article = Article.last
     @second_latest_article = Article.all[-2]
+    article_counter = 1
+    @article_hash = {}
+    @articles.each do |article|
+      if @article_hash[article_counter] == nil
+        @article_hash[article_counter] = {}
+      end
+      @article_hash[article_counter][article.id] = article
+
+      if article.id % 6 == 0
+        article_counter = article_counter + 1
+      end
+      #split the article into groups of 6 for the purposes of the html rendering
+    end
     request.env['PATH_INFO']
   end
 

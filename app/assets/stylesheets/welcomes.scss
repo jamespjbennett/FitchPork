@@ -7,7 +7,8 @@
 .article-show-all {
   position: relative;
   top: 30em;
-  margin-left: -4em;
+  margin-left: -1em;
+  width: 64%;
 }
 
 .latest_article {
@@ -16,7 +17,7 @@
   width: 92%;
 }
 .article-show {
-  width: 28%;
+  width: 49%;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -29,6 +30,32 @@
   position: relative;
   height: 20em;
   margin-right: 1em;
+}
+
+.article-show-right-container{
+  width: 33%;
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  top: 125%;
+}
+
+.article-full-width-separator{
+  width:100%;
+  height: 26em;
+}
+
+.article-show-right-indiv-article{
+  height:41em;
+  margin-bottom:26em;
+}
+
+.image-height-override-hundred{
+  height: 41em!important;
+}
+
+.article-show-right-stretch{
+  width:100%!important;
 }
 
 
