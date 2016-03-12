@@ -34,10 +34,11 @@
 
 .article-show-right-container{
   width: 33%;
-  position: absolute;
-  right: 0;
+  float: right;
+  position: relative;
+  margin-top: -136.5%;
   margin-right: 2%;
-  top: 125%;
+  top: 0;
 }
 
 .article-full-width-separator{
@@ -46,7 +47,7 @@
 }
 
 .article-show-right-indiv-article{
-  height:41em;
+  height:42em;
   margin-bottom:26em;
 }
 
