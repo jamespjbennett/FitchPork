@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'rails_admin_enum4', github: 'sibext/rails_admin_enum4'
 gem 'masonry-rails'
+gem 'json', '~> 1.8.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -37,7 +38,7 @@ gem 'masonry-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 8.2.2'
   gem 'pry-rails'
 
   # Access an IRB console on exception pages or by using <%= console %> in views

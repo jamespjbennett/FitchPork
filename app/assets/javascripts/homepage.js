@@ -3,7 +3,11 @@
 $(document).ready(function(){
 
   $('.scroll-to-content').on('click', function(){
-    $('body').scrollTo('#article-content', {duration:'fast'});
+    // $('body').scrollTo('#article-content', {duration:'fast'});
+
+    $('html, body').animate({
+            scrollTop: $("#article-content").offset().top - 150
+        }, 500);
   })
 
   $('.search-box').on('keyup', function(){
