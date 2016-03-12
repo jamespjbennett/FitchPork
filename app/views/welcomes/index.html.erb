@@ -17,7 +17,7 @@
   </div>
   <div class="article-show-all">
     <% @article_hash.each do |key, value| %>
-      <% value.each do |k, article| %>
+      <% value.each_with_index do |(k,article),index| %>
         <% if (k % 6) != 0 && ((k-1) % 6) != 0 %>
           <div class="article-show <%= article.id %> <%=article.artist %>">
             <div class="image" id="<%= article.image_one %>">
@@ -33,9 +33,26 @@
               </div>
             </div>
           </div>
-          <% if (k-1) % 4 == 0 %>
-            <div class="article-full-width-separator">
-            </div>
+
+          <% if index + 1 == 5 %>
+            <% if Article.all.length >= k+1 %>
+              <div class="article-full-width-separator">
+                <div class="article-show article-show-right-stretch <%= article.id %> <%=article.artist %>">
+                  <div class="image image-mid-feature" id="<%= article.image_one %>">
+                    <div class="article-info">
+                      <div class="article-artist-name">
+                        <% Article.find(k+1).artist.split(" ").each do |word| %>
+                          <p class="artist-link-text"> <%= link_to(word, article_path(Article.find(k+1))) %></p> 
+                        <% end %> 
+                      </div>
+                      <div class="indiv-article-summary hidden ">
+                        <p> this is the latest article brief summary</p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
           <% end %>
         <% end %>
       <% end %>

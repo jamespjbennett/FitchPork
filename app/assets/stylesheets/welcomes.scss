@@ -36,14 +36,19 @@
   width: 33%;
   float: right;
   position: relative;
-  margin-top: -136.5%;
+  margin-top: -1279px;
   margin-right: 2%;
   top: 0;
 }
 
 .article-full-width-separator{
-  width:100%;
+  width: 153%;
   height: 26em;
+}
+
+.image-mid-feature{
+  width: 100% !important;
+  height: 24.5em;
 }
 
 .article-show-right-indiv-article{
@@ -131,7 +136,8 @@
 
 .latest-article-image {
   height: 100%;
-  width: 90%;
+  width: 97%;
+  margin-left: 1%;
   display: inline-block;
   margin-right: 2%;
 }
