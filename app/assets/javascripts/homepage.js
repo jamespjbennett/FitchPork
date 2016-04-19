@@ -53,11 +53,14 @@ $(document).ready(function(){
       $(this).children().children().children().css('color', 'black');
       $(this).children().find('.indiv-article-summary').removeClass('hidden');
       $(this).children().find('.indiv-article-category').removeClass('hidden');
+    }else{
+      $(this).css('opacity', 0.5);
     };
   });
 
   $('.image').mouseout(function(){
     var image_url = $(this).attr('id');
+    $(this).css('opacity', 1.0);
     $(this).css({"background-image": "url("+image_url+")", 
                  "background-repeat": "no-repeat" });
     $(this).css('background-color', '');

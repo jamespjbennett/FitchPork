@@ -37,12 +37,12 @@
           <% if index + 1 == 5 %>
             <% if Article.all.length >= k+1 %>
               <div class="article-full-width-separator">
-                <div class="article-show article-show-right-stretch <%= article.id %> <%=article.artist %>">
+                <div class="article-show article-show-right-stretch <%= article.id %> <%=article.artist %> article-show-large">
                   <div class="image image-mid-feature" id="<%= article.image_one %>">
                     <div class="article-info">
                       <div class="article-artist-name">
                         <% Article.find(k+1).artist.split(" ").each do |word| %>
-                          <p class="artist-link-text"> <%= link_to(word, article_path(Article.find(k+1))) %></p> 
+                          <p class="artist-link-text"> <%= word%></p> 
                         <% end %> 
                       </div>
                       <div class="indiv-article-summary hidden ">
@@ -71,7 +71,7 @@
                 <div class="article-info">
                   <div class="article-artist-name">
                     <% article.artist.split(" ").each do |word| %>
-                      <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 
+                      <p class="artist-link-text"> <%= word %></p> 
                     <% end %> 
                   </div>
                   <div class="indiv-article-summary hidden ">
