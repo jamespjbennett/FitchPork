@@ -45,7 +45,7 @@ $(document).ready(function(){
     var hue = Math.floor(Math.random() * 360);
     var pastel = 'hsl(' + hue + ', 100%, 87.5%)';
     $(this).css('background-image', "");
-    
+
     $(this).css('background-color', pastel);
     // debugger
     // $(this).css('background', '-webkit-linear-gradient(left, grey, grey 30%, white 30%, white)');
@@ -63,6 +63,9 @@ $(document).ready(function(){
     $(this).children().children().children().css('color', 'white')
     $(this).children().find('.indiv-article-summary').addClass('hidden');
     $(this).children().find('.indiv-article-category').addClass('hidden');
+  })
+  $('.article-show').click(function(){
+    window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[1]
   })
 
 }) // document ready ended

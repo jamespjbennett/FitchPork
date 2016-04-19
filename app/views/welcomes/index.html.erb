@@ -24,7 +24,7 @@
               <div class="article-info">
                 <div class="article-artist-name">
                   <% article.artist.split(" ").each do |word| %>
-                    <p class="artist-link-text"> <%= link_to(word, article_path(article)) %></p> 
+                    <p class="artist-link-text"> <%= word %></p> 
                   <% end %> 
                 </div>
                 <div class="indiv-article-summary hidden ">
