@@ -19,7 +19,7 @@
     <% @article_hash.each do |key, value| %>
       <% value.each_with_index do |(k,article),index| %>
         <% if (k % 6) != 0 && ((k-1) % 6) != 0 %>
-          <div class="article-show <%= article.id %> <%=article.artist %>">
+          <div class="article-show <%= article.id %> <%=article.artist %> article-show-small">
             <div class="image" id="<%= article.image_one %>">
               <div class="article-info">
                 <div class="article-artist-name">
