@@ -22,6 +22,9 @@
   font-family: 'Fjalla One', sans-serif;
   /*text-shadow: 1px 1px 1px #4F4D4D;*/
 }
+.article-text p{
+  padding: 3%;
+}
 
 .article-header-title{
   margin-top: 2%;
@@ -44,6 +47,10 @@
 .article-header-subtitle{
   width: 100%;
   display: inline-block;
+  text-align: center;
+}
+.article-show-separator{
+  margin-bottom:30px;
 }
 .article-header-subtitle p, .article-header-artist p{
   font-size: 25px;
@@ -92,7 +99,7 @@
 
 }
 
-.article-text-first p{
+.article-text p{
   font-size: 25px;
   line-height: 32px;
 }

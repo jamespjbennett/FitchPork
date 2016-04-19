@@ -2,12 +2,14 @@
 
 $(document).ready(function(){
 
+
+
   $('.scroll-to-content').on('click', function(){
     // $('body').scrollTo('#article-content', {duration:'fast'});
 
-    $('html, body').animate({
-            scrollTop: $("#article-content").offset().top - 150
-        }, 500);
+    // $('html, body').animate({
+    //         scrollTop: $("#article-content").offset().top - 150
+    //     }, 500);
   })
 
   $('.search-box').on('keyup', function(){
@@ -69,7 +71,7 @@ $(document).ready(function(){
     $(this).children().find('.indiv-article-category').addClass('hidden');
   })
   $('.article-show').click(function(){
-    window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[1]
+    window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]
   })
 
 }) // document ready ended

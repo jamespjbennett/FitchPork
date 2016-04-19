@@ -18,25 +18,42 @@
       </div>
       <div class="article-header-image"> 
       </div>
-      <div class="scroll-to-content">
+   <!--    <div class="scroll-to-content">
         <p>scroll to article</p>
-      </div>
+      </div> -->
     </div>
   </div>
   <div id="article-content"> 
-    <div class="col-md-3  article-text-first">
-      <p><%= @article.content%></p>
-    </div>
-    <div class="col-md-9 article-image-first">
-      <div class="article-image-first-container col-md-12">
-        <%=image_tag(@article.image_one)%>
+    <div class="row article-show-separator">
+      <div class="col-md-6  article-text article-text-first">
+        <p><%= @article.content%></p>
+      </div>
+      <div class="col-md-6 article-image-first">
+        <div class="article-image-first-container col-md-12">
+          <%=image_tag(@article.image_one)%>
+        </div>
       </div>
     </div>
-    <div class="col-md-9 article-image-second">
-      <div class="article-image-second-container col-md-12">
-        <%=image_tag(@article.image_two)%>
+    <div class="row article-show-separator">
+  <!--     <div class="col-md-6 article-image-second hidden">
+        <div class="article-image-first-container col-md-12">
+          <%=image_tag(@article.image_two)%>
+        </div>
+      </div> -->
+      <div class="col-md-6 article-image-second">
+        <div class="article-image-second-container col-md-12">
+          <%=image_tag(@article.image_two)%>
+        </div>
       </div>
+    <div class="col-md-6  article-text article-text-second ">
+      <p></p>
+      <!-- <p><%= @article.content%></p> -->
     </div>
+
+
   </div>
+</div>
+<div class="video-link">
+  <iframe id="video" src="//www.youtube.com/embed/5iiPC-VGFLU" frameborder="0" allowfullscreen></iframe>
 </div>
 
