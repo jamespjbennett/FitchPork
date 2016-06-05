@@ -9,7 +9,7 @@ class WelcomesController < ApplicationController
     @record_reviews = RecordReview.all
     @news = News.all
     @interviews = Interview.all
-    @articles = Article.all
+    @articles = Article.all.order(:id)
     @latest_article = Article.last
     @second_latest_article = Article.all[-2]
     article_counter = 1
@@ -25,6 +25,7 @@ class WelcomesController < ApplicationController
       end
       #split the article into groups of 6 for the purposes of the html rendering
     end
+
     request.env['PATH_INFO']
   end
 
