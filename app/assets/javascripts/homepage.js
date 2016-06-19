@@ -73,6 +73,9 @@ $(document).ready(function(){
   $('.article-show').click(function(){
     window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]
   })
+  $('.latest-article-image').click(function(){
+    window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]
+  })
 
 }) // document ready ended
 

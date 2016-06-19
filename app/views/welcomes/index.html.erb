@@ -7,9 +7,6 @@
           <div class="article-summary">
             <p> this is the latest article brief summary</p>
           </div>
-          <!-- <div class="article-category">
-            <p><%= @latest_article.category %></p>
-          </div> -->
         </div>
       </div>
 
@@ -22,11 +19,7 @@
           <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
             <div class="image" id="<%= article.image_one %>">
               <div class="article-info">
-                <div class="article-artist-name">
-                  <% article.artist.split(" ").each do |word| %>
-                    <p class="artist-link-text"> <%= word %></p> 
-                  <% end %> 
-                </div>
+
                 <div class="indiv-article-summary hidden ">
                   <p> this is the latest article brief summary</p>
                 </div> 
@@ -41,11 +34,6 @@
                 <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
                   <div class="image image-mid-feature" id="<%= article.image_one %>">
                     <div class="article-info">
-                      <div class="article-artist-name">
-                        <% Article.find(k+1).artist.split(" ").each do |word| %>
-                          <p class="artist-link-text"> <%= word%></p> 
-                        <% end %> 
-                      </div>
                       <div class="indiv-article-summary hidden ">
                         <p> this is the latest article brief summary</p>
                       </div> 
@@ -69,11 +57,7 @@
           <div class="article-show-right-indiv-article">
             <div class="<%= article.id %>  article-show article-show-right-stretch <%=article.artist %>">
               <div class="image image-height-override-hundred" id="<%= article.image_one %>">
-                <div class="article-info">
-                  <div class="article-artist-name">
-                    <% article.artist.split(" ").each do |word| %>
-                      <p class="artist-link-text"> <%= word %></p> 
-                    <% end %> 
+                <div class="article-info"> 
                   </div>
                   <div class="indiv-article-summary hidden ">
                     <p> this is the latest article brief summary</p>
