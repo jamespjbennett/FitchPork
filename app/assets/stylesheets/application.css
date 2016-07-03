@@ -54,6 +54,15 @@ a:hover {
   font-family: 'Fjalla One', sans-serif!important;
  }
 
+.social-image img{
+  width: 30%;
+}
+.social-image{
+  text-align: center;
+  padding: 20px;
+}
+
+
  .hidden {
   display:none;
  }
