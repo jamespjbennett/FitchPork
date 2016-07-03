@@ -15,7 +15,7 @@
   <div class="article-show-all">
     <% @article_hash.each do |key, value| %>
       <% value.each_with_index do |(k,article),index| %>
-        <% if (k % 6) != 0 && ((k-1) % 6) != 0 %>
+        <% if index != 4 && index != 5 %>
           <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
             <div class="image" id="<%= article.image_one %>">
               <div class="article-info">
@@ -26,9 +26,8 @@
               </div>
             </div>
           </div>
-
-          <% if index + 1 == 5 %>
-            
+        <% end %>
+        <% if index  == 4 %>
             <% if Article.all.length >= k+1 %>
               <div class="article-full-width-separator">
                 <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
@@ -42,8 +41,8 @@
                 </div>
               </div>
             <% end %>
-          <% end %>
         <% end %>
+        
       <% end %>
     <% end %>
   </div>
@@ -52,8 +51,9 @@
   <div class="article-show-right-container">
 
     <% @article_hash.each do |key, value| %>
-      <% value.each do |k, article| %>
-        <% if ((k-1) % 6) == 0 %>
+      <% value.each_with_index do |(k,article),index| %>
+        <% if index == 5 %>
+        
           <div class="article-show-right-indiv-article">
             <div class="<%= article.id %>  article-show article-show-right-stretch <%=article.artist %>">
               <div class="image image-height-override-hundred" id="<%= article.image_one %>">
