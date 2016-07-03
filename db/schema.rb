@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160703185608) do
+ActiveRecord::Schema.define(version: 20160703190816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,14 +24,15 @@ ActiveRecord::Schema.define(version: 20160703185608) do
     t.string   "image_two"
     t.integer  "category"
     t.string   "author"
-    t.string   "social1_link"
-    t.string   "social2_link"
-    t.string   "social3_link"
     t.string   "video_link"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "artist"
     t.string   "blurb"
+    t.string   "facebook_uul"
+    t.string   "insta_url"
+    t.string   "soundcloud_url"
+    t.string   "twitter_url"
   end
 
   create_table "interviews", force: :cascade do |t|
