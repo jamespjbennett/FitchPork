@@ -27,6 +27,7 @@ gem 'rails_admin_enum4', github: 'sibext/rails_admin_enum4'
 gem 'masonry-rails'
 gem 'json', '~> 1.8.2'
 gem 'rails_12factor', group: :production
+gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

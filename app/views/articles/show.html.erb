@@ -1,6 +1,6 @@
 <div class="article-show-container">
   <div class="article-header-static">
-    <div class="article-intro-large-header" style="background: url(<%= @article.image_one %>); background-size: 100%;">
+    <div class="article-intro-large-header" style="background: url(<%= @article.main_image %>); background-size: 100%;">
     </div>
     <div class="article-intro-large-header-coloring">
     </div>
@@ -30,19 +30,15 @@
       </div>
       <div class="col-md-6 article-image-first">
         <div class="article-image-first-container col-md-12">
-          <%=image_tag(@article.image_one)%>
+          <%=image_tag(@article.main_image)%>
         </div>
       </div>
     </div>
     <div class="row article-show-separator">
-  <!--     <div class="col-md-6 article-image-second hidden">
-        <div class="article-image-first-container col-md-12">
-          <%=image_tag(@article.image_two)%>
-        </div>
-      </div> -->
+
       <div class="col-md-6 article-image-second">
         <div class="article-image-second-container col-md-12">
-          <%=image_tag(@article.image_two)%>
+          <%=image_tag(@article.rectangular_image)%>
         </div>
       </div>
     <div class="col-md-6  article-text article-text-second ">

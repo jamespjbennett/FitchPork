@@ -1,7 +1,7 @@
 <div class="home-container">
   <div class="latest_article"> 
     <div class="latest-article-images">
-      <div class="latest-article-image" id="<%= @latest_article.image_one %>">
+      <div class="latest-article-image" id="<%= @latest_article.main_image %>">
         <div class="header-article-info">
           <p class="header-artist-link-text"> <%= @latest_article.artist.upcase %></p> 
           <div class="article-summary">
@@ -17,7 +17,7 @@
       <% value.each_with_index do |(k,article),index| %>
         <% if index != 4 && index != 5 %>
           <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
-            <div class="image" id="<%= article.image_one %>">
+            <div class="image" id="<%= article.main_image %>">
               <div class="article-info">
 
                 <div class="indiv-article-summary hidden ">
@@ -31,7 +31,7 @@
             <% if Article.all.length >= k+1 %>
               <div class="article-full-width-separator">
                 <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
-                  <div class="image image-mid-feature" id="<%= article.image_one %>">
+                  <div class="image image-mid-feature" id="<%= article.main_image %>">
                     <div class="article-info">
                       <div class="indiv-article-summary hidden ">
                         <p> this is the latest article brief summary</p>
@@ -56,7 +56,7 @@
         
           <div class="article-show-right-indiv-article">
             <div class="<%= article.id %>  article-show article-show-right-stretch <%=article.artist %>">
-              <div class="image image-height-override-hundred" id="<%= article.image_one %>">
+              <div class="image image-height-override-hundred" id="<%= article.main_image %>">
                 <div class="article-info"> 
                   </div>
                   <div class="indiv-article-summary hidden ">
