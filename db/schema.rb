@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160703192032) do
+ActiveRecord::Schema.define(version: 20160710205937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(version: 20160703192032) do
     t.string   "main_image"
     t.string   "square_image"
     t.string   "rectangular_image"
+    t.string   "fourth_image"
+    t.string   "fifth_image"
+    t.string   "sixth_image"
+    t.string   "seventh_image"
   end
 
   create_table "interviews", force: :cascade do |t|
