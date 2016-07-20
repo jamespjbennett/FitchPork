@@ -25,10 +25,10 @@
   </div>
   <div id="article-content"> 
     <div class="row article-show-separator">
-      <div class="col-md-6  article-text article-text-first">
-        <p><%= @article.content%></p>
+      <div class="col-md-12  article-text article-text-first">
+        <p><%= simple_format(@article.content)%></p>
       </div>
-      <div class="col-md-6 article-image-first">
+      <div class="col-md-12 article-image-first">
         <div class="article-image-first-container col-md-12">
           <%=image_tag(@article.main_image)%>
         </div>
@@ -36,7 +36,7 @@
     </div>
     <div class="row article-show-separator">
 
-      <div class="col-md-6 article-image-second">
+      <div class="col-md-12 article-image-second">
         <div class="article-image-second-container col-md-12">
           <%=image_tag(@article.rectangular_image)%>
         </div>

@@ -24,22 +24,23 @@ function checkImagePosition(){
 }
 
 function splitArticleWords(){
-  var txt = $('.article-text-first p').text();
-  var words = txt.split(" ");
-  var amount = words.length
-  var columnAmount = 2
-  var firstColumn = Math.floor(amount / columnAmount);
-  var firstColumnTxt = "";
-  var secondColumnTxt = "";
-  for (var i = 0; i < firstColumn; i++){
-      firstColumnTxt =     firstColumnTxt + " " + words[i]; 
-  }
-  for (var i = firstColumn; i < amount; i++){
-      secondColumnTxt =   secondColumnTxt + " " + words[i];
-  }
-  $('.article-text-first p').first().text(firstColumnTxt);
-  $('.article-text-second p').first().text(secondColumnTxt);
-  $('.article-image-first').first().height($('.article-text-first').first().height()) 
+  // debugger
+  // var txt = $('.article-text-first p').text();
+  // var words = txt.split(" ");
+  // var amount = words.length
+  // var columnAmount = 2
+  // var firstColumn = Math.floor(amount / columnAmount);
+  // var firstColumnTxt = "";
+  // var secondColumnTxt = "";
+  // for (var i = 0; i < firstColumn; i++){
+  //     firstColumnTxt =     firstColumnTxt + " " + words[i]; 
+  // }
+  // for (var i = firstColumn; i < amount; i++){
+  //     secondColumnTxt =   secondColumnTxt + " " + words[i];
+  // }
+  // $('.article-text-first p').first().text(firstColumnTxt);
+  // $('.article-text-second p').first().text(secondColumnTxt);
+  // $('.article-image-first').first().height($('.article-text-first').first().height()) 
 
 //  Add this to your second column
 // console.log(secondColumnTxt);
@@ -47,7 +48,7 @@ function splitArticleWords(){
 }
 
 $(document).ready(function() {
-  // debugger
+  $('#article-content').columnize({ columns: 3 });
   splitArticleWords();
   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
