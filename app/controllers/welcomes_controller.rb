@@ -4,15 +4,20 @@ class WelcomesController < ApplicationController
   # GET /welcomes
   # GET /welcomes.json
   def index
-    @welcomes = Welcome.all
-    @live_reviews = LiveReview.all
-    @record_reviews = RecordReview.all
-    @news = News.all
-    @interviews = Interview.all
-    @articles = Article.all.order(:id)
-    @latest_article = Article.last
-    @second_latest_article = Article.all[-2]
     article_counter = 1
+    @feature_article = Article.where(main_feature_article: true).first
+    @side_article = Article.where(main_right_article: true).first
+    @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id)
+    @articles = []
+    for i in 0..Article.all.length
+       if i == 5
+          @articles.push(@side_article)
+       else
+          if (i+1) <= Article.all.length
+            @articles.push(Article.find(i+1))
+          end
+       end
+    end
     @article_hash = {}
     @articles.each do |article|
       if @article_hash[article_counter] == nil

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710205937) do
+ActiveRecord::Schema.define(version: 20160720210724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20160710205937) do
     t.integer  "category"
     t.string   "author"
     t.string   "video_link"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "artist"
     t.string   "blurb"
     t.string   "facebook_uul"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20160710205937) do
     t.string   "fifth_image"
     t.string   "sixth_image"
     t.string   "seventh_image"
+    t.boolean  "main_feature_article"
+    t.boolean  "main_right_article"
   end
 
   create_table "interviews", force: :cascade do |t|

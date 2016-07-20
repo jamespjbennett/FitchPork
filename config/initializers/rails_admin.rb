@@ -16,6 +16,8 @@ RailsAdmin.config do |config|
       field :main_image
       field :square_image
       field :rectangular_image
+      field :main_feature_article
+      field :main_right_article
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true

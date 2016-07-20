@@ -48,7 +48,7 @@ function splitArticleWords(){
 }
 
 $(document).ready(function() {
-  $('#article-content').columnize({ columns: 3 });
+  $('#article-content').columnize({ columns: 2 });
   splitArticleWords();
   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
