@@ -7,25 +7,18 @@ class WelcomesController < ApplicationController
     article_counter = 1
     @feature_article = Article.where(main_feature_article: true).first
     @side_article = Article.where(main_right_article: true).first
-    @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id)
-    @articles = []
-    for i in 0..Article.all.length
-       if i == 5
-          @articles.push(@side_article)
-       else
-          if (i+1) <= Article.all.length
-            @articles.push(Article.find(i+1))
-          end
-       end
-    end
+    @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id).order(:id)
+    @articles = @articles_all.to_a
+    @articles.insert(5, @side_article)
+
     @article_hash = {}
-    @articles.each do |article|
+    @articles.each_with_index do |article, index|
       if @article_hash[article_counter] == nil
         @article_hash[article_counter] = {}
       end
-      @article_hash[article_counter][article.id] = article
+      @article_hash[article_counter][index] = article
 
-      if article.id % 6 == 0
+      if index + 1 % 6 == 0
         article_counter = article_counter + 1
       end
       #split the article into groups of 6 for the purposes of the html rendering
