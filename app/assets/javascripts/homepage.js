@@ -74,7 +74,7 @@ $(document).ready(function(){
     window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]
   })
   $('.latest-article-image').click(function(){
-    window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]
+    window.location.href = "/articles/" + $(this).attr('data-id');
   })
 
 }) // document ready ended

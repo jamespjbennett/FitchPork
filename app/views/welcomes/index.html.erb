@@ -1,7 +1,7 @@
 <div class="home-container">
   <div class="latest_article"> 
     <div class="latest-article-images">
-      <div class="latest-article-image" id="<%= @feature_article .main_image %>">
+      <div class="latest-article-image" id="<%= @feature_article.main_image %>" data-id="<%= @feature_article.id %>">
         <div class="header-article-info">
           <p class="header-artist-link-text"> <%= @feature_article.artist.upcase %></p> 
           <div class="article-summary">
@@ -13,6 +13,7 @@
     </div>
   </div>
   <div class="article-show-all">
+  
     <% @article_hash.each do |key, value| %>
       <% value.each_with_index do |(k,article),index| %>
         <% if index != 4 && index != 5 %>
