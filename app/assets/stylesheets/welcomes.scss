@@ -215,14 +215,15 @@
 .indiv-article-summary p{
   position: absolute;
   color: white;
-  top: 6em;
+  top: 41px;
   line-height: 104%;
   text-align: left;
-  left: -1.2em;
-  font-size: 15px;
+  /* left: -1.2em; */
+  font-size: 20px;
   font-family: 'Fjalla One', sans-serif;
   width: 291%;
-  }
+  font-size: 37px;
+}
 
 .indiv-article-category{
   position: relative;
