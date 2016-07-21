@@ -52,7 +52,7 @@ $(document).ready(function(){
       // debugger
       // $(this).css('background', '-webkit-linear-gradient(left, grey, grey 30%, white 30%, white)');
       // background: -webkit-linear-gradient(left, grey, grey 30%, white 30%, white)
-      $(this).children().children().children().css('color', 'black');
+      // $(this).children().children().children().css('color', 'black');
       $(this).children().find('.indiv-article-summary').removeClass('hidden');
       $(this).children().find('.indiv-article-category').removeClass('hidden');
     }else{
@@ -66,7 +66,7 @@ $(document).ready(function(){
     $(this).css({"background-image": "url("+image_url+")", 
                  "background-repeat": "no-repeat" });
     $(this).css('background-color', '');
-    $(this).children().children().children().css('color', 'white')
+    // $(this).children().children().children().css('color', 'white')
     $(this).children().find('.indiv-article-summary').addClass('hidden');
     $(this).children().find('.indiv-article-category').addClass('hidden');
   })
