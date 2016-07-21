@@ -47,16 +47,14 @@ $(document).ready(function(){
       var hue = Math.floor(Math.random() * 360);
       var pastel = 'hsl(' + hue + ', 100%, 87.5%)';
       $(this).css('background-image', "");
-
       $(this).css('background-color', pastel);
-      // debugger
-      // $(this).css('background', '-webkit-linear-gradient(left, grey, grey 30%, white 30%, white)');
-      // background: -webkit-linear-gradient(left, grey, grey 30%, white 30%, white)
-      // $(this).children().children().children().css('color', 'black');
       $(this).children().find('.indiv-article-summary').removeClass('hidden');
       $(this).children().find('.indiv-article-category').removeClass('hidden');
     }else{
       $(this).css('opacity', 0.5);
+      $(this).children().find('.indiv-article-summary').removeClass('hidden');
+      $('.article-show-right-container').find('.image .indiv-article-summary').removeClass('hidden')
+
     };
   });
 
