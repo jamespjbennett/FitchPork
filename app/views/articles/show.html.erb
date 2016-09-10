@@ -9,8 +9,19 @@
     </div>    
   </div>
   <div class="article-content">
+    <% counter = 0 %>
     <% @article_content_array.each do |article_segment| %>
-      <%= simple_format(article_segment)%>
+        <% if @article_content_array[counter] != nil %>
+          <div class="row">
+            <div class="col-sm-6">
+              <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
+            </div>
+            <div class="col-sm-6">
+              <%= image_tag(@article.main_image) %>
+            </div>
+            <% counter = counter + 2 %>
+          </div>
+        <% end %>
     <% end %>
   </div>
   <div class="social-container">
