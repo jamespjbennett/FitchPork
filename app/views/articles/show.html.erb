@@ -1,77 +1,9 @@
-<div class="article-show-container">
-  <div class="article-header-static">
-    <div class="article-intro-large-header" style="background: url(<%= @article.main_image %>); background-size: 100%;">
-    </div>
-    <div class="article-intro-large-header-coloring">
-    </div>
-    <div class="article-header-with-content">
-      <div class="article-header-title">
-        <p><%= @article.title %></p>
-      </div>
-      <div class="further-article-info">
-        <div class="article-header-subtitle">
-          <p><%= @article.subtitle %></p>
-        </div>
-        <!-- <div class="article-header-artist">
-          <p><%= @article.artist %></p>
-        </div> -->
-      </div>
-      <div class="article-header-image"> 
-      </div>
-   <!--    <div class="scroll-to-content">
-        <p>scroll to article</p>
-      </div> -->
-    </div>
-  </div>
-  <div id="article-content"> 
-    <div class="row article-show-separator">
-      <div class="col-md-12  article-text article-text-first">
-        <p><%= simple_format(@article.content)%></p>
-      </div>
-<!--       <div class="col-md-12 article-image-first">
-        <div class="article-image-first-container col-md-12">
-          <%=image_tag(@article.main_image)%>
-        </div>
-      </div> -->
-    </div>
-    <div class="row article-show-separator">
-
-<!--       <div class="col-md-12 article-image-second">
-        <div class="article-image-second-container col-md-12">
-          <%=image_tag(@article.rectangular_image)%>
-        </div>
-      </div> -->
-    <div class="col-md-6  article-text article-text-second ">
-      <p></p>
-      <!-- <p><%= @article.content%></p> -->
-    </div>
-
-
+<div class="article-container container">
+  <div class="article-header-container col-xs-12" 
+       style="background: url(<%= @article.rectangular_image%>);     
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              height: 400px;">
+    <%= @article.artist %>
   </div>
 </div>
-<div class="social-container">
-  <div class="social-icons">
-    <div class="col-sm-3">
-      <div class="social-image">
-        <%= link_to image_tag("facebook.png"), @article.facebook_uul != nil ? @article.facebook_uul : "http://facebook.com" %>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="social-image">
-        <%= link_to image_tag("insta.png"), @article.insta_url != nil ? @article.insta_url : "http://instagram.com" %>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="social-image">
-        <%= link_to image_tag("twitter.png"), @article.twitter_url != nil ? @article.twitter_url : "http://twitter.com" %>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="social-image">
-        <%= link_to image_tag("soundcloud.png"), @article.soundcloud_url != nil ? @article.soundcloud_url : "http://soundcloud.com" %>
-      </div>
-    </div>
-  </div>  
-  <iframe id="video" src="<%=@article.video_link %>" frameborder="0" allowfullscreen></iframe>
-</div>
-
