@@ -7,6 +7,11 @@
 }
 
 
-.article-container, .article-artist-header h4{
+.article-container, .article-artist-header h4, .article-content p{
   font-family: 'Fjalla One', sans-serif;
+}
+
+.article-content p {
+  font-size: 18px;
+  line-height: 200%;
 }

@@ -9,7 +9,9 @@
     </div>    
   </div>
   <div class="article-content">
-    <%= simple_format(@article.content)%>
+    <% @article_content_array.each do |article_segment| %>
+      <%= simple_format(article_segment)%>
+    <% end %>
   </div>
   <div class="social-container">
     <div class="social-icons">
