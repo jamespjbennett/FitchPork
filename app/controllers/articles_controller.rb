@@ -12,6 +12,7 @@ class ArticlesController < ApplicationController
   def show
   	response.headers.delete "X-Frame-Options"
     @article = Article.find(params[:id])
+    @hue = rand(1..360)
   end
 
   def allow_iframe_requests
