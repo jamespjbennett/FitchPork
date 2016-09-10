@@ -13,12 +13,21 @@
     <% @article_content_array.each do |article_segment| %>
         <% if @article_content_array[counter] != nil %>
           <div class="row">
-            <div class="col-sm-6">
-              <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
-            </div>
-            <div class="col-sm-6">
-              <%= image_tag(@article.main_image) %>
-            </div>
+            <% if counter == 0 || counter % 4 == 0 %>
+              <div class="col-sm-6">
+                <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
+              </div>
+              <div class="col-sm-6 artice-small-image-container">
+                <%= image_tag(@article.main_image) %>
+              </div>
+            <% else %>
+              <div class="col-sm-6 artice-small-image-container">
+                <%= image_tag(@article.main_image) %>
+              </div>
+              <div class="col-sm-6">
+                <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
+              </div>
+            <% end %>
             <% counter = counter + 2 %>
           </div>
         <% end %>
