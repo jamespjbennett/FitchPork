@@ -13,29 +13,61 @@
     <% @article_content_array.each do |article_segment| %>
         <% if @article_content_array[counter] != nil %>
           <div class="row">
-            <% if counter == 0 || counter % 4 == 0 %>
-              <div class="col-sm-6 article-text-container" >
-                <% if @article_content_array[counter + 1] != nil %>
-                  <% next_content = @article_content_array[counter + 1] %>
+            <!-- conditional to get article on the left - image on the right-->
+            <% if counter < 6 %>
+              <% if counter == 0  %>
+                <div class="col-sm-6 article-text-container" >
+                  <% if @article_content_array[counter + 1] != nil %>
+                    <% next_content = @article_content_array[counter + 1] %>
+                  <% else %>
+                    <% next_content = "" %>
+                  <% end %>
+                  <%= simple_format(@article_content_array[counter] + next_content)%>
+                </div>
+                <div class="col-sm-6 artice-small-image-container" >
+                  <%= image_tag(@article.main_image) %>
+                </div>
+              <% else %>
+                <% if counter % 4 != 0 %>
+                  <!-- article goes on the right, image on the left-->
+
+                  <div class="col-sm-6 artice-small-image-container">
+                    <%= image_tag(@article.square_image) %>
+                  </div>
+                  <div class="col-sm-6 article-text-container" >
+                    <% if @article_content_array[counter + 1] != nil %>
+                      <% next_content = @article_content_array[counter + 1] %>
+                    <% else %>
+                      <% next_content = "" %>
+                    <% end %>
+                    <%= simple_format(@article_content_array[counter] + next_content)%>
+                  </div>
                 <% else %>
-                  <% next_content = "" %>
+                  <div class="col-sm-12 article-text-container" >
+                    <% if @article_content_array[counter + 1] != nil %>
+                      <% next_content = @article_content_array[counter + 1] %>
+                    <% else %>
+                      <% next_content = "" %>
+                    <% end %>
+                    <%= simple_format(@article_content_array[counter] + next_content)%>
+                  </div>
+                  <div class="col-sm-12 artice-small-image-container-full">
+                    <%= image_tag(@article.rectangular_image) %>
+                  </div>
                 <% end %>
-                <%= simple_format(@article_content_array[counter] + next_content)%>
-              </div>
-              <div class="col-sm-6 artice-small-image-container" >
-                <%= image_tag(@article.main_image) %>
-              </div>
+              <% end %>
             <% else %>
-              <div class="col-sm-6 artice-small-image-container">
-                <%= image_tag(@article.main_image) %>
-              </div>
-              <div class="col-sm-6 article-text-container" >
-                <% if @article_content_array[counter + 1] != nil %>
-                  <% next_content = @article_content_array[counter + 1] %>
-                <% else %>
-                  <% next_content = "" %>
+              <div class="col-sm-12 article-text-container" >
+                <% while @article_content_array[counter] != nil && @article_content_array[counter + 1] != nil %>
+            
+                  <% if @article_content_array[counter + 1] != nil %>
+                    <% next_content = @article_content_array[counter + 1] %>
+                  <% else %>
+                    <% next_content = "" %>
+                  <% end %>
+                  <%= simple_format(@article_content_array[counter] + next_content)%>
+                  <% counter = counter + 2 %>
                 <% end %>
-                <%= simple_format(@article_content_array[counter] + next_content)%>
               </div>
             <% end %>
             <% counter = counter + 2 %>
