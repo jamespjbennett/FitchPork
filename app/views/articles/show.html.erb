@@ -15,7 +15,12 @@
           <div class="row">
             <% if counter == 0 || counter % 4 == 0 %>
               <div class="col-sm-6">
-                <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
+                <% if @article_content_array[counter + 1] != nil %>
+                  <% next_content = @article_content_array[counter + 1] %>
+                <% else %>
+                  <% next_content = "" %>
+                <% end %>
+                <%= simple_format(@article_content_array[counter] + next_content)%>
               </div>
               <div class="col-sm-6 artice-small-image-container">
                 <%= image_tag(@article.main_image) %>
@@ -25,7 +30,12 @@
                 <%= image_tag(@article.main_image) %>
               </div>
               <div class="col-sm-6">
-                <%= simple_format(@article_content_array[counter] + @article_content_array[counter + 1])%>
+                <% if @article_content_array[counter + 1] != nil %>
+                  <% next_content = @article_content_array[counter + 1] %>
+                <% else %>
+                  <% next_content = "" %>
+                <% end %>
+                <%= simple_format(@article_content_array[counter] + next_content)%>
               </div>
             <% end %>
             <% counter = counter + 2 %>

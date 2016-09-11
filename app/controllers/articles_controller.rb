@@ -16,17 +16,24 @@ class ArticlesController < ApplicationController
     counter = 0
     @article_content_array = []
     allArticle = @article .content
+
     allArticle.split('<p>').each do |article_segment|
       if allArticle.split('<p>')[counter] != nil
         if allArticle.split('<p>')[counter].length > 250 
           @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>'))
           counter = counter + 1
         else  
-          @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>') + allArticle.split('<p>')[counter + 1].prepend('<p>'))
+        if allArticle.split('<p>')[counter + 1] != nil 
+          next_content = allArticle.split('<p>')[counter + 1].prepend('<p>')
+        else 
+          next_content = "" 
+        end 
+          @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>') + next_content)
           counter = counter + 2
         end  
       end  
     end 
+    binding.pry
   end
 
   def allow_iframe_requests
