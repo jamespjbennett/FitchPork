@@ -19,21 +19,26 @@ class ArticlesController < ApplicationController
 
     allArticle.split('<p>').each do |article_segment|
       if allArticle.split('<p>')[counter] != nil
-        if allArticle.split('<p>')[counter].length > 250 
+        if allArticle.split('<p>')[counter].length >= 300 
           @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>'))
           counter = counter + 1
         else  
-        if allArticle.split('<p>')[counter + 1] != nil 
-          next_content = allArticle.split('<p>')[counter + 1].prepend('<p>')
-        else 
-          next_content = "" 
-        end 
-          @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>') + next_content)
-          counter = counter + 2
+          counterJump = 1
+          article_array_addition = ""
+          begin
+            if allArticle.split('<p>')[counter + counterJump] != nil 
+              next_content = allArticle.split('<p>')[counter + counterJump].prepend('<p>')
+              article_array_addition += next_content
+            else 
+              next_content = "" 
+            end 
+             counterJump +=1;
+          end until article_array_addition.length >= 300 || allArticle.split('<p>')[counter + counterJump] == nil
+          @article_content_array.push(allArticle.split('<p>')[counter].prepend('<p>') + article_array_addition)
+          counter = counter + counterJump
         end  
       end  
     end 
-    binding.pry
   end
 
   def allow_iframe_requests
