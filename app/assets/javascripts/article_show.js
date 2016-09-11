@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	$.each($('.artice-small-image-container'), function(index, value){
 		var height = $(value).parent().find('.article-text-container').height();
-		$(value).height(height)
+		$(value).height(height);
 	})
   	
   }

@@ -17,10 +17,22 @@
   color: #666;
 }
 
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .article-content p b{
   color: black;
 }
 
-.artice-small-image-container img{
-  width: 100%;
+.artice-small-image-container{
+  position:relative;
+}
+.artice-small-image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
