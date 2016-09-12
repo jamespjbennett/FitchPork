@@ -1,7 +1,7 @@
 .home-container {
-  width: 97%;
+  width: 100%;
   text-align: center;
-  margin-left: 4.4%;
+  margin-top:100px;
 }
 
 .article-show-all {
@@ -11,14 +11,11 @@
   width: 64%;
 }
 
-.header-container a{
-  font-size: 39px;
-}
 
 .latest_article {
   position: absolute;
   height: 26em;
-  width: 92%;
+  width: 100%;
 }
 .article-show {
   width: 49%;
@@ -36,6 +33,14 @@
   height: 20em;
   margin-right: 1em;
 }
+
+
+
+
+.top-margin{
+  margin-top: 10px;
+}
+
 
 .article-show-right-container{
   width: 33%;

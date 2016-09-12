@@ -24,6 +24,13 @@
     margin: 0px;
     padding: 0px;
  }
+
+
+ @font-face {
+    font-family: 'Oranienbaum';
+    src: url('/assets/Oranienbaum.ttf');
+}
+
  body {
   font-family: 'Fjalla One', sans-serif;
  }
@@ -37,21 +44,36 @@ a:hover {
   color: #A0A0A0;
 }
 
-
+.article-container{
+  margin-top: 72px!important;
+}
 
 
  .header {
   width: 100%;
   top: 0;
   position: fixed;
-  text-align: center;
   font-size: 5em;
-  height: 2em;
-  background: white;
+  height: 1.1em;
+  background: black;
   z-index: 3;
   font-weight: bold;
   padding-top: 1%;
   font-family: 'Fjalla One', sans-serif!important;
+ }
+
+ .header-container a img{
+    width: 100px;
+    border-radius: 50px;
+    margin-top: -61px;
+ }
+
+
+.header-container h5{
+  color:white;
+}
+ .pull-right{
+  float:right;
  }
 
 .social-image img{
@@ -67,13 +89,11 @@ a:hover {
   display:none;
  }
 
- .container {
-  margin-top: -18px;
- }
+.container {
+    margin-top: 50px;
+}
 
- .wrapper {
-  margin-top: 8em;
- }
+
 
  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
      color:    #DBDBDB;

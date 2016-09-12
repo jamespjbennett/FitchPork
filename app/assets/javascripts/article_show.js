@@ -15,11 +15,16 @@ $(document).ready(function() {
 		var take_away_margin = ($('body').width() - $('.container').width()) / 2
 		$('.artice-small-image-container-full').width($('body').width());
 		$('.artice-small-image-container-full').css('margin-left', -Math.abs(take_away_margin));
+		$('.article-header-container ').width($('body').width());
+		$('.article-header-container ').css('margin-left', -Math.abs(take_away_margin));
+		
 
 		$(window).resize(function() {
 			var take_away_margin = ($('body').width() - $('.container').width()) / 2
 			$('.artice-small-image-container-full').width($('body').width());
-			$('.artice-small-image-container-full').css('margin-left', -Math.abs(take_away_margin));	
+			$('.article-header-container ').width($('body').width());
+			$('.artice-small-image-container-full').css('margin-left', -Math.abs(take_away_margin));
+			$('.article-header-container ').css('margin-left', -Math.abs(take_away_margin));
 		})
   	
   	}

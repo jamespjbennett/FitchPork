@@ -1,9 +1,10 @@
-.article-artist-header{
-  color: white;
-  position: absolute;
+.opening-line-header{
+  color: black;
   top: 20%;
-  width: 97%;
   text-align: center;
+  height: 411px;
+  margin-top: -26px;
+  margin-bottom: -71px;
 }
 
 
@@ -19,10 +20,50 @@
 
 }
 
+.article-header-container img{
+  width: 100%;
+}
+
+.artice-small-image-container-full{
+  margin-top: 50px;
+}
+
+
+.article-artist-header{
+  margin-top:100px;
+}
+
+.article-text-container{
+  padding-left: 2rem!important;
+  padding-top: 1rem;
+}
+.artice-small-image-container{
+  padding-top: 26px;
+}
+
+.article-artist-header h1, .article-artist-header h2{
+  width: 70%;
+  margin: 0 auto;
+  font-family: Oranienbaum;
+}
+
+.article-artist-header p{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+/*.article-header-container{
+  height: 400px;
+}*/
+
+.article-text-container{
+  font-family: Oranienbaum;
 }
 
 .article-content p {
@@ -30,7 +71,9 @@
     line-height: 140%;
     color: #666;
     margin-bottom: 5px!important;
+    font-family: Oranienbaum;
 }
+
 
 .article-content p b{
   color:black;
@@ -41,6 +84,7 @@
 }
 .artice-small-image-container img {
     width: 94%;
+    max-height:100%;
 }
 
 .artice-small-image-container-full img{

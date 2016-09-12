@@ -10,8 +10,9 @@
 </head>
 <body>
   <div class="header">
-    <div class="container header-container">
-      <%= link_to('BEARDS. WIVES. DENIM.', root_path) %>
+    <div class="container-fluid header-container">
+      <%= link_to(image_tag('logo3.png'), root_path) %> 
+      <h5 class="pull-right top-margin">BEARD | WIVES | DENIM</h5>
     </div>
     <% if request.env['PATH_INFO'] == '/' %>
       <input type="text" class="search-box" placeholder="Search for band">

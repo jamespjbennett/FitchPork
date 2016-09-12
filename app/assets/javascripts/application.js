@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require masonry/jquery.masonry
+//= require parallax.min
 //= require jquery.columnizer
 //= require_tree .

@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
   	response.headers.delete "X-Frame-Options"
     @article = Article.find(params[:id])
     @hue = rand(1..360)
-    @color = "hsl(#{@hue}, 100%, 98.0%)"
+    @color = "hsl(#{@hue}, 100%, 97.0%)"
     counter = 0
     @article_content_array = []
     allArticle = @article .content
