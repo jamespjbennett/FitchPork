@@ -3,6 +3,7 @@ RailsAdmin.config do |config|
     edit do
       # For RailsAdmin >= 0.5.0
       field :title
+      field :subtitle
       field :video_link
       field :content, :wysihtml5
       field :category

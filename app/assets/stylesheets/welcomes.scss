@@ -17,11 +17,19 @@
   height: 26em;
   width: 100%;
 }
+
+.logo-container{
+  
+}
 .article-show {
   width: 49%;
   display: inline-block;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.latest-article-image:hover{
+  cursor:pointer;
 }
 
 .header-article-info {
@@ -131,7 +139,7 @@
 .article-info {
   position: absolute;
   left: 14%;
-  top: 15%;
+  top: -4%;
   
 }
 
