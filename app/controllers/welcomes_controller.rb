@@ -5,6 +5,8 @@ class WelcomesController < ApplicationController
   # GET /welcomes.json
   def index
     article_counter = 1
+    @hue = rand(1..360)
+    @color = "hsl(#{@hue}, 100%, 97.0%)"
     @feature_article = Article.where(main_feature_article: true).first
     @side_article = Article.where(main_right_article: true).first
     @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id).order(:id)

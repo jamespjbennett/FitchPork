@@ -7,7 +7,7 @@
 .article-show-all {
   position: relative;
   top: 30em;
-  margin-left: -1em;
+  margin-left: 1em;
   width: 64%;
 }
 
@@ -26,6 +26,7 @@
 
 .header-article-info {
   width: 100%;
+  margin-top:173px;
 }
 
 .image {
@@ -34,11 +35,18 @@
   margin-right: 1em;
 }
 
-
-
+.article-summary-text{
+  clear: both;
+  margin-top: 24px;
+  font-size: 20px;
+}
 
 .top-margin{
-  margin-top: 10px;
+  margin-top: 22px;
+}
+
+.latest_article{
+  margin-top: -12px;
 }
 
 
@@ -47,7 +55,6 @@
   float: right;
   position: relative;
   margin-top: -94.5em;
-  margin-right: 2%;
   top: 0;
 }
 
@@ -170,14 +177,15 @@
 }
 
 .header-artist-link-text {
-  display: block;
-  float: left;
-  font-family: 'Fjalla One', sans-serif;
   font-size: 67px;
-  margin-top: 10%;
-  margin-left: 3%;
   text-decoration: overline underline;
-  color:white;
+}
+
+.header-article-info p{
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  float: left;
+  margin-left: 5%;
 }
 
 .header-artist-link-text a {
@@ -188,9 +196,7 @@
   position: relative;
 }
 
-.article-summary {
-  position: relative;
-}
+
 
 .article-category p {
   position: absolute;
@@ -255,8 +261,8 @@
 
 .search-box{
   float: right;
-  margin-right: 6%;
-  margin-top: -4%;
+  margin-right: 4%;
+  margin-top: -101px;
   height: 28px;
   width: 179px;
   border: 2px solid grey;

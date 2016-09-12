@@ -75,5 +75,9 @@ $(document).ready(function(){
     window.location.href = "/articles/" + $(this).attr('data-id');
   })
 
+  if(window.location.pathname == "/"){
+    $('.home-container').height($('.article-show-all').height());
+  }
+
 }) // document ready ended
 
