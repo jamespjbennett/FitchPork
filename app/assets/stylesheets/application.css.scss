@@ -28,8 +28,12 @@
 
  @font-face {
     font-family: 'Oranienbaum';
-    src: url('/assets/Oranienbaum.ttf');
+    src: asset_url('Oranienbaum.ttf');
+    src: asset_url('Oranienbaum.ttf') format('truetype');
 }
+
+
+
 
  body {
   font-family: 'Fjalla One', sans-serif;
