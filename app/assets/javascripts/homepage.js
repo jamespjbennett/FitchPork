@@ -43,14 +43,13 @@ $(document).ready(function(){
                  "background-position": "50% 50%" });
   });
 
-  $('.image').mouseover(function(){
-    if($(this).parent().hasClass('article-show-small')){
+  $('.image').mouseenter(function(){
+    if($(this).parent().hasClass('article-show-small') || $(this).parent().hasClass('float-right-article')){
       var hue = Math.floor(Math.random() * 360);
       var pastel = 'hsl(' + hue + ', 100%, 87.5%)';
       $(this).css('background-image', "");
       $(this).css('background-color', pastel);
-      $(this).children().find('.indiv-article-summary').removeClass('hidden');
-      $(this).children().find('.indiv-article-category').removeClass('hidden');
+      $(this).find('.article-info').removeClass('hidden');
     }else{
       $(this).css('opacity', 0.5);
       $(this).children().find('.indiv-article-summary').removeClass('hidden');
@@ -59,15 +58,13 @@ $(document).ready(function(){
     };
   });
 
-  $('.image').mouseout(function(){
+  $('.image').mouseleave(function(){
     var image_url = $(this).attr('id');
     $(this).css('opacity', 1.0);
     $(this).css({"background-image": "url("+image_url+")", 
                  "background-repeat": "no-repeat" });
     $(this).css('background-color', '');
-    // $(this).children().children().children().css('color', 'white')
-    $(this).children().find('.indiv-article-summary').addClass('hidden');
-    $(this).children().find('.indiv-article-category').addClass('hidden');
+    $(this).find('.article-info').addClass('hidden');
   })
   $('.article-show').click(function(){
     window.location.href = "/articles/" + $(this).attr('class').split(/\s+/)[0]

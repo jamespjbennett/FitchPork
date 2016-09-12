@@ -17,6 +17,7 @@ RailsAdmin.config do |config|
       field :main_image
       field :square_image
       field :rectangular_image
+      field :rectangular_image_2
       field :main_feature_article
       field :main_right_article
       # For RailsAdmin < 0.5.0

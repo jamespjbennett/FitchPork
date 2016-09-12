@@ -26,6 +26,7 @@
   display: inline-block;
   margin-bottom: 10px;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .latest-article-image:hover{
@@ -136,21 +137,50 @@
 //   opacity: 0.2;
 // }
 
-.article-info {
-  position: absolute;
-  left: 14%;
-  top: -4%;
-  
+
+
+.article-info{
+  text-align:left;
+  color:grey;
+  height: 100%;
 }
 
-.article-info p {
-  font-size: 47px;
-  font-family: 'Fjalla One', sans-serif;
-  margin-bottom: 0.6em;
-  margin-left: -0.7em;
-  text-align: left;
-  height: 20px;
+.article-info-large{
   color:white;
+  text-align: left;
+}
+.indiv-article-artist{
+  height:40%;
+}
+
+.article-info-large{
+  height:100%;
+}
+
+.third{
+  height:33%;
+}
+
+.half{
+  height: 50%;
+}
+.indiv-article-artist p {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 5px;
+  line-height: 120%;
+}
+
+.article-info-large .indiv-article-artist p{
+  font-size: 65px;
+}
+
+.indiv-article-subtitle p {
+    font-size: 20px;
+    line-height: 120%;
+    font-family: Oranienbaum;
+    padding: 5px;
 }
 
 .article-info a {
@@ -200,32 +230,8 @@
   color: white;
 }
 
-.article-category {
-  position: relative;
-}
 
 
-
-.article-category p {
-  position: absolute;
-  color: white;
-  top: 18em;
-  left: 0.7em;
-  font-size: 17px;
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 8px;
-}
-
-.article-summary p {
-  position: absolute;
-  color: white;
-  top: 8em;
-  line-height: 120%;
-  text-align: left;
-  left: 1.6em;
-  font-size: 23px;
-  font-family: 'Fjalla One', sans-serif;
-}
 
 .article-artist-name{
   height:30px;
@@ -235,44 +241,14 @@
   color: purple;
 }
 
-.indiv-article-summary p{
-  position: absolute;
-  color: #6f6d6d;
-  top: 41px;
-  line-height: 104%;
-  text-align: left;
-  font-size: 20px;
-  font-family: 'Fjalla One', sans-serif;
-  width: 291%;
-  font-size: 37px;
-}
 
-.indiv-article-category{
-  position: relative;
-}
-
-.indiv-article-category p{
-  position: absolute;
-  color: white;
-  top: 9em;
-  left: 0.7em;
-  font-size: 17px;
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 8px;
-}
-
-.indiv-article-category p{
-  color: white;
-  left: -1em;
-
-}
 
 .search-box{
   float: right;
-  margin-right: 4%;
+  margin-right: 22%;
   margin-top: -101px;
   height: 28px;
-  width: 179px;
+  width: 19%;
   border: 2px solid grey;
   border-radius: 5%;
   font-family: 'Fjalla One', sans-serif;

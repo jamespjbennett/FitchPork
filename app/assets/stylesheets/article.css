@@ -64,6 +64,9 @@
 
 .article-text-container{
   font-family: Oranienbaum;
+  font-size: 18px;
+  line-height: 140%;
+  color: #666;
 }
 
 .article-content p {
