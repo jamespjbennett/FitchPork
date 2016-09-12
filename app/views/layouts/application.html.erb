@@ -14,9 +14,6 @@
       <%= link_to(image_tag('logo3.png'), root_path) %> 
       <h5 class="top-margin pull-right">BEARD | WIVES | DENIM</h5>
     </div>
-    <% if request.env['PATH_INFO'] == '/' %>
-      <input type="text" class="search-box" placeholder="Search for band">
-    <% end %>
   </div>
   <div class="wrapper">
     <%= yield %>
