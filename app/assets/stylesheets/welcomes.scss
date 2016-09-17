@@ -117,20 +117,7 @@
 
 
 
-// .article-show:hover p {
-//   font-size: 40px;
-//   color: '#404040';
-//   top: 40%;
-//   left: 15%;
-// }
 
-// .article-show:hover .text .article-category{
-//   font-size: 15px;
-// }
-
-// .article-show:hover .text .article-artist{
-//   font-size: 40px;
-// }
 
 
 // .article-show:hover img {
@@ -166,10 +153,11 @@
 }
 .indiv-article-artist p {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   padding-top: 20px;
-  padding-left: 5px;
+  padding-left: 10px;
   line-height: 120%;
+  word-wrap: break-word;
 }
 
 .article-info-large .indiv-article-artist p{
@@ -181,6 +169,7 @@
     line-height: 120%;
     font-family: Oranienbaum;
     padding: 5px;
+    padding-left: 10px;
 }
 
 .article-info a {
