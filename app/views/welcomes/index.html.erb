@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <div class="container-fluid ">
+  <div class="container-fluid desktop-container">
     <div class="article-show-all">
     
       <% @article_hash.each do |key, value| %>
@@ -84,6 +84,53 @@
         <% end%>
       <% end%>
     </div>
+  </div>
+
+
+  <div class="article-show-all mobile-container full-width">
+    <% @mobile_articles_hash.each do |key, value| %>
+      <% value.each_with_index do |(k,article),index| %>
+        <% if index != 4 && index != 5 %>
+          <div class="<%= article.id %> article-show <%=article.artist %> half-width">
+            <div class="image grow" id="<%= article.main_image %>">
+              <div class="article-info">
+
+                <div class="indiv-article-artist ">
+                  <p> <%= article.artist.upcase %></p>
+                </div> 
+                <div class="indiv-article-subtitle">
+                  <p> <%= article.subtitle %></p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <% if index  == 4 %>
+            <% if Article.all.length >= k+1 %>
+              <div class="full-width-100">
+                <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
+                  <div class="image grow image-mid-feature" id="<%= article.main_image %>">
+
+                    <div class="article-info-large">
+                      <div class="third"></div>
+                      <div class="third">
+                        <div class="indiv-article-artist half">
+                          <p> <%= article.artist.upcase %></p>
+                        </div> 
+                        <div class="indiv-article-subtitle half">
+                          <p> <%= article.subtitle %></p>
+                        </div> 
+                      </div>
+                      <div class="third"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+        <% end %>
+        
+      <% end %>
+    <% end %>
   </div>
 </div>
 

@@ -10,17 +10,33 @@ class WelcomesController < ApplicationController
     @feature_article = Article.where(main_feature_article: true).first
     @side_article = Article.where(main_right_article: true).first
     @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id).order(created_at: :desc)
+    @articles_all_mobile = Article.where.not(id: @feature_article.id).order(created_at: :desc)
+    @articles_all_mobile = @articles_all_mobile.to_a
     @articles = @articles_all.to_a
     @articles.insert(5, @side_article)
 
     @article_hash = {}
+    @mobile_articles_hash = {}
+
     @articles.each_with_index do |article, index|
       if @article_hash[article_counter] == nil
         @article_hash[article_counter] = {}
       end
       @article_hash[article_counter][index] = article
 
-      if index + 1 % 6 == 0
+      if index + 1 % 5 == 0
+        article_counter = article_counter + 1
+      end
+      #split the article into groups of 6 for the purposes of the html rendering
+    end
+
+    @articles_all_mobile.each_with_index do |article, index|
+      if @mobile_articles_hash[article_counter] == nil
+        @mobile_articles_hash[article_counter] = {}
+      end
+      @mobile_articles_hash[article_counter][index] = article
+
+      if index + 1 % 5 == 0
         article_counter = article_counter + 1
       end
       #split the article into groups of 6 for the purposes of the html rendering

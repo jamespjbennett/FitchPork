@@ -172,7 +172,7 @@
     padding-left: 10px;
 }
 
-.col-xs-4 i.fa{
+.social-top-link i.fa{
   float: right;
   font-size: 25px;
   color: white;
@@ -248,6 +248,91 @@
   border-radius: 5%;
   font-family: 'Fjalla One', sans-serif;
   font-size: 16px;
+}
+
+.mobile-container{
+  display:none;
+}
+
+.desktop-container{
+  display:block;
+}
+
+
+// mobile css for homepage
+
+@media only screen and(max-width: 767px){
+  body .header{
+    height: 2em;
+  }
+  h5.top-margin{
+    display:none;
+  }
+
+  .header .header-container a img{
+    width: 158px;
+    margin-top: 5px;
+  }
+
+  .social-top-link i.fa{
+    font-size: 7vw;
+    text-align:right;
+  }
+
+  .top-margin{
+    margin-top: 58px;
+  }
+
+  .home-container{
+    margin-top: 177px;
+  }
+
+  .mobile-container{
+    display:block;
+  }
+
+  .desktop-container{
+    display:none;
+  }
+
+  .article-show-all{
+    margin: auto;
+  }
+
+  .full-width{
+    width:97.5%;
+  }
+
+  .half-width{
+    width: 49%;
+  }
+  .image{
+    margin-right: 0;
+  }
+
+  .article-show-right-stretch, .image{
+    height: 13em;
+  }
+  .latest-article-images{
+    width: 100%!important;
+    margin-left: 0.5%;  
+  }
+  .latest-article-image{
+    height:113%;
+  }
+  .full-width-100{
+    width:100%;
+  }
+
+  .indiv-article-artist p{
+    font-size:25px;
+    color:white;
+  }
+
+  .indiv-article-subtitle p{
+    font-size: 15px;
+    color:white;  
+  }
 }
 
 
