@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160912170217) do
+ActiveRecord::Schema.define(version: 20160917123001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20160912170217) do
     t.boolean  "main_feature_article"
     t.boolean  "main_right_article"
     t.string   "rectangular_image_2"
+    t.datetime "date_of_submission"
   end
 
   create_table "interviews", force: :cascade do |t|
