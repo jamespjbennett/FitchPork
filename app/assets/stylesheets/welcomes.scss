@@ -330,8 +330,64 @@
   }
 
   .indiv-article-subtitle p{
-    font-size: 15px;
+    font-size: 13px;
     color:white;  
+  }
+
+  .indiv-article-artist, .indiv-article-subtitle{
+    background: rgba(0,0,0,0.3);
+  }
+
+  .article-info{
+    height: 70%;
+  }
+  .indiv-article-artist{
+      height: 60%;
+  }
+  .indiv-article-subtitle{
+    height: 40%;
+  }
+
+  .fifty-height{
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+  }
+  .fifty-height p{
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 9px;
+    padding-left: 6px;
+    text-align: center;
+    line-height: 120%;
+  }
+  .sixty-height{
+    height: 60%;
+    background: rgba(0,0,0,0.3);
+  }
+  .sixty-height p{
+    font-family: Oranienbaum;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    line-height: 120%;
+  }
+  .header-article-info{
+    margin-top: 44px;  
+  }
+  .article-summary-text{
+    margin-top: 5%;
+    line-height: 120%;  
+  }
+  .header-article-info p{
+    line-height:130%;
+    float: inherit;
+    text-align: center;
+
+  }
+  .header-artist-link-text{
+    font-size:60px;
   }
 }
 
