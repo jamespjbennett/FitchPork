@@ -1,3 +1,4 @@
+<div class="mobile-test"></div>
 <div class="opening-line-header" style="background: <%= @color %>">
   <div class="article-artist-header">
     <br>
@@ -17,7 +18,6 @@
   <div class="article-header-container">
     <%= image_tag(@article.rectangular_image ) %>
   </div>
- 
   </div>
   <div class="article-content container" >
     <% counter = 0 %>
@@ -89,22 +89,22 @@
   </div>
   <div class="social-container">
     <div class="social-icons">
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="social-image">
           <%= link_to image_tag("facebook.png"), @article.facebook_uul != nil ? @article.facebook_uul : "http://facebook.com" %>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="social-image">
           <%= link_to image_tag("insta.png"), @article.insta_url != nil ? @article.insta_url : "http://instagram.com" %>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="social-image">
           <%= link_to image_tag("twitter.png"), @article.twitter_url != nil ? @article.twitter_url : "http://twitter.com" %>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="social-image">
           <%= link_to image_tag("soundcloud.png"), @article.soundcloud_url != nil ? @article.soundcloud_url : "http://soundcloud.com" %>
         </div>

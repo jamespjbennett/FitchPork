@@ -97,9 +97,13 @@ r.opening-line-header{
     height: 100%;
 }
 
+.mobile-test{
+  display:none;
+}
+
 @media only screen and(max-width: 767px){
   .article-artist-header {
-      margin-top: 186px!important;
+      margin-top: 160px!important;
       text-align: center;
   }
   .blurb-break{
@@ -107,5 +111,12 @@ r.opening-line-header{
   }
   .article-artist-header h1{
     font-size: 21px;
+  }
+  .mobile-test{
+    display:block;
+  }
+  .social-image img{
+    width: 200%!important;
+    margin-left: -53%;
   }
 }
