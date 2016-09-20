@@ -4,7 +4,7 @@ RailsAdmin.config do |config|
       # For RailsAdmin >= 0.5.0
       field :title
       field :subtitle
-      field :video_link
+      field :soundcloud_url
       field :content, :wysihtml5
       field :category
       field :author
