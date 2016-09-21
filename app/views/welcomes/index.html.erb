@@ -13,63 +13,14 @@
 
   <div class="container-fluid desktop-container">
     <div class="article-show-all">
-    
-      <% @article_hash.each do |key, value| %>
-        <% value.each_with_index do |(k,article),index| %>
-          <% if index != 4 && index != 5 %>
-            <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
-              <div class="image grow" id="<%= article.main_image %>">
-                <div class="article-info hidden">
-
-                  <div class="indiv-article-artist ">
-                    <p> <%= article.artist.upcase %></p>
-                  </div> 
-                  <div class="indiv-article-subtitle">
-                    <p> <%= article.subtitle %></p>
-                  </div> 
-                </div>
-              </div>
-            </div>
-          <% end %>
-          <% if index  == 4 %>
-              <% if Article.all.length >= k+1 %>
-                <div class="article-full-width-separator">
-                  <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
-                    <div class="image grow image-mid-feature" id="<%= article.main_image %>">
-
-                      <div class="article-info-large">
-                        <div class="third"></div>
-                        <div class="third">
-                          <div class="indiv-article-artist half">
-                            <p> <%= article.artist.upcase %></p>
-                          </div> 
-                          <div class="indiv-article-subtitle half">
-                            <p> <%= article.subtitle %></p>
-                          </div> 
-                        </div>
-                        <div class="third"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <% end %>
-          <% end %>
-          
-        <% end %>
-      <% end %>
-    </div>
-
-
-    <div class="article-show-right-container">
-
-      <% @article_hash.each do |key, value| %>
-        <% value.each_with_index do |(k,article),index| %>
-          <% if index == 5 %>
-          
-            <div class="article-show-right-indiv-article">
-              <div class="<%= article.id %>  article-show article-show-right-stretch float-right-article <%=article.artist %>">
-                <div class="image grow image-height-override-hundred" id="<%= article.main_image %>">
+      <div class="col-xs-8 article-show-left-container">
+        <% @article_hash.each do |key, value| %>
+          <% value.each_with_index do |(k,article),index| %>
+            <% if index != 4 && index != 5 %>
+              <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
+                <div class="image grow" id="<%= article.main_image %>">
                   <div class="article-info hidden">
+
                     <div class="indiv-article-artist ">
                       <p> <%= article.artist.upcase %></p>
                     </div> 
@@ -79,11 +30,62 @@
                   </div>
                 </div>
               </div>
-            </div>
+            <% end %>
+            <% if index  == 4 %>
+                <% if Article.all.length >= k+1 %>
+                  <div class="article-full-width-separator">
+                    <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
+                      <div class="image grow image-mid-feature" id="<%= article.main_image %>">
+
+                        <div class="article-info-large">
+                          <div class="third"></div>
+                          <div class="third">
+                            <div class="indiv-article-artist half">
+                              <p> <%= article.artist.upcase %></p>
+                            </div> 
+                            <div class="indiv-article-subtitle half">
+                              <p> <%= article.subtitle %></p>
+                            </div> 
+                          </div>
+                          <div class="third"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+            <% end %>
+            
+          <% end %>
+        <% end %>
+      </div>
+      <div class="article-show-right-container col-xs-4">
+
+        <% @article_hash.each do |key, value| %>
+          <% value.each_with_index do |(k,article),index| %>
+            <% if index == 5 %>
+            
+              <div class="article-show-right-indiv-article">
+                <div class="<%= article.id %>  article-show article-show-right-stretch float-right-article <%=article.artist %>">
+                  <div class="image grow image-height-override-hundred" id="<%= article.main_image %>">
+                    <div class="article-info hidden">
+                      <div class="indiv-article-artist ">
+                        <p> <%= article.artist.upcase %></p>
+                      </div> 
+                      <div class="indiv-article-subtitle">
+                        <p> <%= article.subtitle %></p>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end%>
           <% end%>
         <% end%>
-      <% end%>
+      </div>
     </div>
+
+
+
   </div>
 
 
