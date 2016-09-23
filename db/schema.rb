@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160917123728) do
+ActiveRecord::Schema.define(version: 20160923193056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20160917123728) do
     t.integer  "category"
     t.string   "author"
     t.string   "soundcloud_link"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.string   "artist"
     t.string   "blurb"
     t.string   "facebook_uul"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20160917123728) do
     t.boolean  "main_right_article"
     t.string   "rectangular_image_2"
     t.string   "date_of_submission"
+    t.boolean  "third_feature_article"
   end
 
   create_table "interviews", force: :cascade do |t|
