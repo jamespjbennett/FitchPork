@@ -91,22 +91,22 @@
     <div class="social-icons">
       <div class="col-xs-3">
         <div class="social-image">
-          <%= link_to image_tag("facebook.png"), @article.facebook_uul != nil ? @article.facebook_uul : "http://facebook.com" %>
+          <%= link_to image_tag("facebook.png"), @article.facebook_uul != nil ? @article.facebook_uul : "http://facebook.com", :target => "_blank" %>
         </div>
       </div>
       <div class="col-xs-3">
         <div class="social-image">
-          <%= link_to image_tag("insta.png"), @article.insta_url != nil ? @article.insta_url : "http://instagram.com" %>
+          <%= link_to image_tag("insta.png"), @article.insta_url != nil ? @article.insta_url : "http://instagram.com", :target => "_blank" %>
         </div>
       </div>
       <div class="col-xs-3">
         <div class="social-image">
-          <%= link_to image_tag("twitter.png"), @article.twitter_url != nil ? @article.twitter_url : "http://twitter.com" %>
+          <%= link_to image_tag("twitter.png"), @article.twitter_url != nil ? @article.twitter_url : "http://twitter.com", :target => "_blank" %>
         </div>
       </div>
       <div class="col-xs-3">
         <div class="social-image">
-          <%= link_to image_tag("soundcloud.png"), @article.soundcloud_url != nil ? @article.soundcloud_url : "http://soundcloud.com" %>
+          <%= link_to image_tag("soundcloud.png"), @article.soundcloud_url != nil ? @article.soundcloud_url : "http://soundcloud.com", :target => "_blank" %>
         </div>
       </div>
     </div>  
