@@ -110,6 +110,8 @@
         </div>
       </div>
     </div>  
-    <%= @article.soundcloud_link.html_safe%>
+    <% if @article.soundcloud_link %>
+      <%= @article.soundcloud_link.html_safe%>
+    <% end %>
   </div>
 </div>
