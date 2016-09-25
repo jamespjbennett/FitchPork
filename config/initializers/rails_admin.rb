@@ -1,4 +1,11 @@
 RailsAdmin.config do |config|
+
+  config.authenticate_with do
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
+  
+
   config.model Article do
     edit do
       # For RailsAdmin >= 0.5.0
