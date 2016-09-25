@@ -70,8 +70,8 @@
               <% end %>
             <% else %>
               <div class="col-sm-12 article-text-container" >
+
                 <% while @article_content_array[counter] != nil && @article_content_array[counter + 1] != nil %>
-            
                   <% if @article_content_array[counter + 1] != nil %>
                     <% next_content = @article_content_array[counter + 1] %>
                   <% else %>
@@ -79,6 +79,9 @@
                   <% end %>
                   <%= simple_format(@article_content_array[counter] + next_content)%>
                   <% counter = counter + 2 %>
+                <% end %>
+                <% if @article_content_array[counter] != nil %>
+                  <%= simple_format(@article_content_array[counter]) %>
                 <% end %>
               </div>
             <% end %>
