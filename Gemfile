@@ -28,6 +28,7 @@ gem 'masonry-rails'
 gem 'json', '~> 1.8.2'
 gem 'rails_12factor', group: :production
 gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
