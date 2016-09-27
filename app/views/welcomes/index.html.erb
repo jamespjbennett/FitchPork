@@ -33,17 +33,17 @@
               <% end %>
             <% end %>
           </div>
-          <% if value[5] %>
+          <% if value[4] %>
             <div class="article-show-right-container col-xs-4">
               <div class="article-show-right-indiv-article">
-                <div class="<%= value[5].id %>  article-show article-show-right-stretch float-right-article <%= value[5].artist %>">
-                  <div class="image grow image-height-override-hundred" id="<%= value[5].main_image %>">
+                <div class="<%= value[4].id %>  article-show article-show-right-stretch float-right-article <%= value[4].artist %>">
+                  <div class="image grow image-height-override-hundred" id="<%= value[4].main_image %>">
                     <div class="article-info hidden">
                       <div class="indiv-article-artist ">
-                        <p> <%= value[5].artist.upcase %></p>
+                        <p> <%= value[4].artist.upcase %></p>
                       </div> 
                       <div class="indiv-article-subtitle">
-                        <p> <%= value[5].subtitle %></p>
+                        <p> <%= value[4].subtitle %></p>
                       </div> 
                     </div>
                   </div>
@@ -51,18 +51,18 @@
               </div>
             </div>
           <% end %>
-          <% if value[4] %>
+          <% if value[5] %>
             <div class="article-full-width-separator col-xs-12">
-              <div class="<%= value[4].id %> article-show article-show-right-stretch  <%=value[4].artist %> article-show-large">
-                <div class="image grow image-mid-feature" id="<%= value[4].main_image %>">
+              <div class="<%= value[5].id %> article-show article-show-right-stretch  <%=value[5].artist %> article-show-large">
+                <div class="image grow image-mid-feature" id="<%= value[5].main_image %>">
                   <div class="article-info-large">
                     <div class="third"></div>
                     <div class="third">
                       <div class="indiv-article-artist half">
-                        <p> <%= value[4].artist.upcase %></p>
+                        <p> <%= value[5].artist.upcase %></p>
                       </div> 
                       <div class="indiv-article-subtitle half">
-                        <p> <%= value[4].subtitle %></p>
+                        <p> <%= value[5].subtitle %></p>
                       </div> 
                     </div>
                     <div class="third"></div>
