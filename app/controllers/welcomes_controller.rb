@@ -22,11 +22,10 @@ class WelcomesController < ApplicationController
 
     @articles.each_with_index do |article, index|
       if @article_hash[article_counter] == nil
-        @article_hash[article_counter] = {}
+        @article_hash[article_counter] = []
       end
-      @article_hash[article_counter][index] = article
-
-      if index + 1 % 5 == 0
+      @article_hash[article_counter].push(article)
+      if (index + 1) % 6 == 0 
         article_counter = article_counter + 1
       end
       #split the article into groups of 6 for the purposes of the html rendering
