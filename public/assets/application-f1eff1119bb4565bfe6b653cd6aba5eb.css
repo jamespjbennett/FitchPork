@@ -291,7 +291,7 @@ div.field, div.actions {
 
 /* line 63, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .top-margin {
-  margin-top: 22px;
+  margin-top: 2%;
 }
 
 /* line 67, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
@@ -420,19 +420,20 @@ div.field, div.actions {
   float: right;
   font-size: 25px;
   color: white;
+  line-height: 250%;
 }
 
-/* line 190, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 191, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .article-info a {
   color: white;
 }
 
-/* line 194, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 195, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .latest-article-image img {
   height: 100%;
 }
 
-/* line 198, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 199, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .latest-article-image {
   height: 100%;
   width: 97%;
@@ -441,31 +442,31 @@ div.field, div.actions {
   margin-right: 2%;
 }
 
-/* line 206, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 207, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .latest-article-images {
   height: 100%;
   width: 106%;
   margin-left: -2%;
 }
 
-/* line 212, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 213, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .test {
   border: 1px solid black;
   position: relative;
 }
 
-/* line 217, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 218, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .artist-link-text {
   z-index: 1000;
 }
 
-/* line 221, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 222, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .header-artist-link-text {
   font-size: 67px;
   text-decoration: overline underline;
 }
 
-/* line 226, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 227, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .header-article-info p {
   font-family: 'Fjalla One', sans-serif;
   color: white;
@@ -473,22 +474,22 @@ div.field, div.actions {
   margin-left: 5%;
 }
 
-/* line 233, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 234, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .header-artist-link-text a {
   color: white;
 }
 
-/* line 240, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 241, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .article-artist-name {
   height: 30px;
 }
 
-/* line 244, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 245, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .right-container-text {
   color: purple;
 }
 
-/* line 250, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 251, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .search-box {
   float: right;
   margin-right: 22%;
@@ -501,139 +502,139 @@ div.field, div.actions {
   font-size: 16px;
 }
 
-/* line 262, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 263, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .mobile-container {
   display: none;
 }
 
-/* line 266, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+/* line 267, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
 .desktop-container {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 274, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 275, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   body .header {
     height: 2em;
   }
 
-  /* line 277, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 278, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   h5.top-margin {
     display: none;
   }
 
-  /* line 281, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 282, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .header .header-container a img {
     width: 158px;
     margin-top: 5px;
   }
 
-  /* line 286, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 287, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .social-top-link i.fa {
     font-size: 7vw;
     text-align: right;
   }
 
-  /* line 291, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 292, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .top-margin {
     margin-top: 58px;
   }
 
-  /* line 295, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 296, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .home-container {
     margin-top: 177px;
   }
 
-  /* line 299, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 300, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .mobile-container {
     display: block;
   }
 
-  /* line 303, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 304, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .desktop-container {
     display: none;
   }
 
-  /* line 307, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 308, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .article-show-all {
     margin: auto;
   }
 
-  /* line 311, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 312, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .full-width {
     width: 97.5%;
   }
 
-  /* line 315, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 316, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .half-width {
     width: 49%;
   }
 
-  /* line 318, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 319, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .image {
     margin-right: 0;
   }
 
-  /* line 322, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 323, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .article-show-right-stretch, .image {
     height: 13em;
   }
 
-  /* line 325, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 326, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .latest-article-images {
     width: 100% !important;
     margin-left: 0.5%;
   }
 
-  /* line 329, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 330, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .latest-article-image {
     height: 113%;
   }
 
-  /* line 332, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 333, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .full-width-100 {
     width: 100%;
   }
 
-  /* line 336, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 337, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-artist p {
     font-size: 25px;
     color: white;
   }
 
-  /* line 341, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 342, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-subtitle p {
     font-size: 13px;
     color: white;
   }
 
-  /* line 346, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 347, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-artist, .indiv-article-subtitle {
     background: rgba(0, 0, 0, 0.3);
   }
 
-  /* line 350, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 351, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .article-info {
     height: 70%;
   }
 
-  /* line 353, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 354, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-artist {
     height: 60%;
   }
 
-  /* line 356, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 357, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-subtitle {
     height: 40%;
   }
 
-  /* line 360, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 361, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .fifty-height {
     height: 50%;
     background: rgba(0, 0, 0, 0.3);
   }
 
-  /* line 364, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 365, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .fifty-height p {
     font-family: 'Fjalla One', sans-serif;
     color: white;
@@ -644,13 +645,13 @@ div.field, div.actions {
     line-height: 120%;
   }
 
-  /* line 373, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 374, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .sixty-height {
     height: 60%;
     background: rgba(0, 0, 0, 0.3);
   }
 
-  /* line 377, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 378, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .sixty-height p {
     font-family: Oranienbaum;
     color: white;
@@ -660,25 +661,25 @@ div.field, div.actions {
     line-height: 120%;
   }
 
-  /* line 385, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 386, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .header-article-info {
     margin-top: 44px;
   }
 
-  /* line 388, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 389, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .article-summary-text {
     margin-top: 5%;
     line-height: 120%;
   }
 
-  /* line 392, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 393, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .header-article-info p {
     line-height: 130%;
     float: inherit;
     text-align: center;
   }
 
-  /* line 398, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
+  /* line 399, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .header-artist-link-text {
     font-size: 60px;
   }
@@ -769,27 +770,28 @@ a:hover {
 /* line 81, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .header-container a img {
   width: 90px;
-  margin-top: -51px;
+  margin-top: -64px;
 }
 
 /* line 87, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .header-container h5 {
   color: white;
-  font-size: 25px;
+  font-size: 31px;
   text-align: center;
+  line-height: 200%;
 }
 
-/* line 92, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 93, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .pull-right {
   float: right;
 }
 
-/* line 96, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 97, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .social-image img {
   width: 30%;
 }
 
-/* line 99, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 100, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .social-image {
   margin-bottom: 50px;
   text-align: center;
@@ -797,17 +799,17 @@ a:hover {
   margin-top: 50px;
 }
 
-/* line 107, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 108, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .hidden {
   display: none;
 }
 
-/* line 111, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 112, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 .container {
   margin-top: 50px;
 }
 
-/* line 117, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 118, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #DBDBDB;
@@ -815,7 +817,7 @@ a:hover {
   font-size: 17px;
 }
 
-/* line 122, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 123, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #DBDBDB;
@@ -824,7 +826,7 @@ a:hover {
   font-size: 17px;
 }
 
-/* line 129, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 130, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #DBDBDB;
@@ -833,7 +835,7 @@ a:hover {
   font-size: 17px;
 }
 
-/* line 136, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
+/* line 137, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/application.css.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #DBDBDB;
