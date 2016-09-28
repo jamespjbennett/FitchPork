@@ -11,9 +11,10 @@ class WelcomesController < ApplicationController
     @side_article = Article.where(main_right_article: true).first
     @third_feature_article = Article.where(third_feature_article: true).first
     @articles_all = Article.where.not(id: @side_article.id).where.not(id: @feature_article.id).where.not(id: @third_feature_article.id).order(created_at: :desc)
-    @articles_all_mobile = Article.where.not(id: @feature_article.id).order(created_at: :desc)
+    @articles_all_mobile = Article.where.not(id: @feature_article.id).where.not(id: @third_feature_article.id).order(created_at: :desc)
     @articles_all_mobile = @articles_all_mobile.to_a
     @articles = @articles_all.to_a
+    @articles_all_mobile.insert(4, @third_feature_article)
     @articles.insert(4, @third_feature_article)
     @articles.insert(4, @side_article)
 
