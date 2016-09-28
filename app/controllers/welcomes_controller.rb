@@ -14,7 +14,7 @@ class WelcomesController < ApplicationController
     @articles_all_mobile = Article.where.not(id: @feature_article.id).order(created_at: :desc)
     @articles_all_mobile = @articles_all_mobile.to_a
     @articles = @articles_all.to_a
-    @articles.insert(5, @third_feature_article)
+    @articles.insert(4, @third_feature_article)
     @articles.insert(4, @side_article)
 
     @article_hash = {}
