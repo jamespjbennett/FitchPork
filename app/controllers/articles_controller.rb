@@ -10,7 +10,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    binding.pry
   	response.headers.delete "X-Frame-Options"
     @article = Article.find(params[:id])
     @hue = rand(1..360)
