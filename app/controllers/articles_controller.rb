@@ -11,7 +11,8 @@ class ArticlesController < ApplicationController
 
   def show
   	response.headers.delete "X-Frame-Options"
-    @article = Article.find(params[:id])
+    # @article = Article.find(params[:id])
+    @article = Article.find_by_slug(params[:id])
     @hue = rand(1..360)
     @color = "hsl(#{@hue}, 100%, 97.0%)"
     counter = 0

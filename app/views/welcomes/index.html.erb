@@ -1,7 +1,7 @@
 <div class="home-container">
   <div class="latest_article"> 
     <div class="latest-article-images">
-      <div class="latest-article-image" id="<%= @feature_article.rectangular_image %>" data-id="<%= @feature_article.id %>">
+      <div class="latest-article-image" id="<%= @feature_article.rectangular_image %>" data-id="<%= @feature_article.slug %>">
         <div class="header-article-info">
           <p class="header-artist-link-text"> <%= @feature_article.artist.upcase %></p> 
           <p class="article-summary-text"> <%= @feature_article.subtitle %></p>
@@ -18,7 +18,7 @@
           <div class="col-xs-8 article-show-left-container">
             <% value[0..3].each do |article| %>
               <% if article %>
-                <div class="<%= article.id %> article-show <%=article.artist %> article-show-small">
+                <div class="<%= article.slug %> article-show <%=article.artist %> article-show-small">
                   <div class="image grow" id="<%= article.main_image %>">
                     <div class="article-info hidden">
                       <div class="indiv-article-artist ">
@@ -81,7 +81,7 @@
       <% value.each_with_index do |(k,article),index| %>
         <% if ((index + 1) % 5 == 0) && index != 0 %>
           <div class="full-width-100">
-            <div class="<%= article.id %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
+            <div class="<%= article.slug %> article-show article-show-right-stretch  <%=article.artist %> article-show-large">
               <div class="image grow image-mid-feature" id="<%= article.rectangular_image %>">
 
                 <div class="article-info-large">
@@ -96,7 +96,7 @@
             </div>
           </div>
         <% else %>
-          <div class="<%= article.id %> article-show <%=article.artist %> half-width">
+          <div class="<%= article.slug %> article-show <%=article.artist %> half-width">
             <div class="image grow" id="<%= article.main_image %>">
               <div class="article-info">
 

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :live_reviews
   resources :articles
+  get    'articles/:slug' => 'articles#show', :as => 'article_show'
+
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
