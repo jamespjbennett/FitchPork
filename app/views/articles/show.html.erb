@@ -42,7 +42,7 @@
                 <% if counter % 4 != 0 %>
                   <!-- article goes on the right, image on the left-->
 
-                  <div class="col-sm-12 col-md-6 artice-small-image-container">
+                  <div class="col-sm-12 col-md-6 artice-small-image-container hidden-sm-down">
                     <%= image_tag(@article.square_image) %>
                   </div>
                   <div class="col-sm-12 col-md-6 article-text-container" >
@@ -52,6 +52,9 @@
                       <% next_content = "" %>
                     <% end %>
                     <%= simple_format(@article_content_array[counter] + next_content)%>
+                  </div>
+                  <div class="col-sm-12 col-md-6 artice-small-image-container hidden-md-up">
+                    <%= image_tag(@article.square_image) %>
                   </div>
                 <% else %>
                   <div class="col-sm-12 article-text-container" >
