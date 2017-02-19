@@ -262,7 +262,11 @@
   color: purple;
 }
 
-
+  .art-category{
+    font-size: 25px!important;
+    font-family: 'Fjalla One', sans-serif!important;
+    letter-spacing: 2px;
+  }
 
 .search-box {
   float: right;
@@ -283,6 +287,10 @@
 .desktop-container{
   display:block;
 }
+
+  .indiv-article-subtitle{
+    height:36%;
+  }
 
 
 // mobile css for homepage
@@ -349,6 +357,10 @@
   .full-width-100{
     width:100%;
   }
+
+
+
+
 
   .indiv-article-artist p{
     font-size:25px;
@@ -421,6 +433,10 @@
   .social-top-link{
     margin-top: 25%!important;
   }
+}
+
+.indiv-article-artist {
+  height: 45%!important;
 }
 
 
