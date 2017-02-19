@@ -657,7 +657,8 @@ div.field, div.actions {
 
   /* line 385, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
   .indiv-article-subtitle {
-    height: 40%;
+    height: 49%;
+    padding-top: 20px;
   }
 
   /* line 389, /Users/jamesbennett/Desktop/WEB DEVELOPMENT/forshaw_music/fitchPork/app/assets/stylesheets/welcomes.scss */
