@@ -70,6 +70,7 @@
                       <div class="indiv-article-subtitle half">
                         <p> <%= value[5].subtitle %></p>
                       </div> 
+
                     </div>
                     <div class="third"></div>
                   </div>
@@ -97,6 +98,9 @@
                   <div class="sixty-height">
                     <p> <%= article.subtitle %></p>
                   </div>
+                  <div class="indiv-article-subtitle">
+                    <p class="art-category"> <%= article.category %></p>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -109,8 +113,11 @@
                 <div class="indiv-article-artist ">
                   <p> <%= article.artist.upcase %></p>
                 </div> 
-                <div class="indiv-article-subtitle">
+                <div class="indiv-article-subtitle subtitle">
                   <p> <%= article.subtitle %></p>
+                </div> 
+                <div class="indiv-article-subtitle category">
+                  <p class="art-category"> <%= article.category %></p>
                 </div> 
               </div>
             </div>

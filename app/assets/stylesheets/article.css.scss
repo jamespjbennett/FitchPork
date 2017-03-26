@@ -28,6 +28,12 @@ r.opening-line-header{
   margin-top: 50px;
 }
 
+.mobile-container .art-category{
+  font-size:13px!important;
+}
+
+
+
 
 .article-artist-header{
   margin-top:88px;
@@ -112,6 +118,16 @@ r.opening-line-header{
   .article-artist-header h1{
     font-size: 21px;
   }
+
+  .indiv-article-subtitle.category{
+    height: 33%;
+  }
+
+  .indiv-article-subtitle.subtitle{
+    height: 47%;
+  }
+
+
   .mobile-test{
     display:block;
   }
